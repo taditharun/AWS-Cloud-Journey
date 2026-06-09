@@ -88,4 +88,15 @@ Started from zero — documenting every step publicly.
 
 > Done — Completed | Active — In Progress | Locked — Upcoming
 
+---
+
+## Career Roadmap
+
+```
+2026   Cloud Internship         15,000 - 40,000 per month
+2027   Cloud Engineer           8L - 12L per year
+2029   Senior Cloud Engineer    20L - 35L per year
+2031   Cloud Security Engineer  35L - 60L per year
+2033   Security Architect       1Cr+ per year
+```
 
