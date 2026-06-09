@@ -2,7 +2,7 @@
 
 ![header](https://capsule-render.vercel.app/api?type=waving&color=0:0F2027,50:203A43,100:2C5364&height=220&section=header&text=Tadi%20Tharun&fontSize=60&fontColor=ffffff&animation=fadeIn&desc=Cloud%20Engineer%20%7C%20AWS%20%7C%20Linux%20%7C%20Security&descSize=22&descAlignY=75&descColor=99ccff)
 
-[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=00D4FF&center=true&vCenter=true&width=600&lines=Cloud+Engineer+in+Progress;AWS+%7C+Linux+%7C+Security+Enthusiast;Open+to+Cloud+Internships+2026;GSOC+2027+Target+Contributor;Building+in+Public+%E2%80%94+Daily)](https://git.io/typing-svg)
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?font=Fira+Code&size=22&pause=1000&color=00D4FF&center=true&vCenter=true&width=600&lines=Cloud+Engineer+in+Progress;AWS+%7C+Linux+%7C+Security+Enthusiast;Open+to+Cloud+Internships+2026;GSOC+2027+Target+Contributor;Building+in+Public+Every+Day)](https://git.io/typing-svg)
 
 ![Visitors](https://visitor-badge.laobi.icu/badge?page_id=taditharun.taditharun)
 
@@ -17,7 +17,7 @@ Building toward Cloud Security Engineer at Google or Amazon.
 Started from zero — documenting every step publicly.
 
 - Currently completing AWS Cloud Practitioner certification
-- Hands-on daily with AWS Console, Linux Ubuntu terminal
+- Hands-on daily with AWS Console and Linux Ubuntu terminal
 - Active open source contributor — OWASP/Nest (GSOC 2025)
 - Target: Cloud Internship by July 2026
 
@@ -67,7 +67,7 @@ Started from zero — documenting every step publicly.
 
 <div align="center">
 
-<img src="https://github-readme-stats.vercel.app/api/wakatime?username=taditharun&theme=tokyonight&hide_border=true" height="180"/>
+[![Trophy](https://github-profile-trophy.vercel.app/?username=taditharun&theme=tokyonight&no-frame=true&column=4&margin-w=15)](https://github.com/taditharun)
 
 </div>
 
@@ -88,53 +88,4 @@ Started from zero — documenting every step publicly.
 
 > Done — Completed | Active — In Progress | Locked — Upcoming
 
----
 
-## Projects
-
-| Project | Services Used | Status | Link |
-|---------|--------------|--------|------|
-| Custom VPC Architecture | VPC, Subnets, NAT, IGW | Done | [View](#) |
-| S3 Static Website | S3, CloudFront | Active | Coming Soon |
-| IAM Audit Tool | IAM, Python, boto3 | Locked | Coming Soon |
-| CloudTrail Analyzer | CloudTrail, Python | Locked | Coming Soon |
-| Port Scanner | Python, Linux CLI | Locked | Coming Soon |
-
----
-
-## Open Source Contributions
-
-| Organization | Repository | Role | Year |
-|-------------|-----------|------|------|
-| OWASP | OWASP/Nest | Contributor | 2025 |
-| CNCF | cncf/mentoring | Target | 2027 |
-| Django | django/django | Target | 2027 |
-
----
-
-## Currently Learning
-
-- AWS CloudWatch — monitoring and alarms
-- OSI Model — 7 layers and practical use
-- AWS Cloud Practitioner — Skill Builder modules
-- Networking fundamentals — DNS, Ports, Protocols
-
----
-
-## Daily Consistency
-
-> Every day one commit. Every week one new skill.
-> Every month one step closer to the goal.
-
-![Activity](https://github-readme-activity-graph.vercel.app/graph?username=taditharun&theme=tokyo-night&hide_border=true)
-
----
-
-## Connect
-
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/tadi-tharun-674038383)
-[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/taditharun)
-
----
-
-![footer](https://capsule-render.vercel.app/api?type=waving&color=0:2C5364,50:203A43,100:0F2027&height=120&section=footer)
