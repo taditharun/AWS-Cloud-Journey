@@ -67,7 +67,7 @@ Started from zero — documenting every step publicly.
 
 <div align="center">
 
-![Streak](https://github-readme-streak-stats.herokuapp.com/?user=taditharun&theme=tokyonight&hide_border=true)
+<img src="https://github-readme-stats.vercel.app/api/wakatime?username=taditharun&theme=tokyonight&hide_border=true" height="180"/>
 
 </div>
 
@@ -88,3 +88,53 @@ Started from zero — documenting every step publicly.
 
 > Done — Completed | Active — In Progress | Locked — Upcoming
 
+---
+
+## Projects
+
+| Project | Services Used | Status | Link |
+|---------|--------------|--------|------|
+| Custom VPC Architecture | VPC, Subnets, NAT, IGW | Done | [View](#) |
+| S3 Static Website | S3, CloudFront | Active | Coming Soon |
+| IAM Audit Tool | IAM, Python, boto3 | Locked | Coming Soon |
+| CloudTrail Analyzer | CloudTrail, Python | Locked | Coming Soon |
+| Port Scanner | Python, Linux CLI | Locked | Coming Soon |
+
+---
+
+## Open Source Contributions
+
+| Organization | Repository | Role | Year |
+|-------------|-----------|------|------|
+| OWASP | OWASP/Nest | Contributor | 2025 |
+| CNCF | cncf/mentoring | Target | 2027 |
+| Django | django/django | Target | 2027 |
+
+---
+
+## Currently Learning
+
+- AWS CloudWatch — monitoring and alarms
+- OSI Model — 7 layers and practical use
+- AWS Cloud Practitioner — Skill Builder modules
+- Networking fundamentals — DNS, Ports, Protocols
+
+---
+
+## Daily Consistency
+
+> Every day one commit. Every week one new skill.
+> Every month one step closer to the goal.
+
+![Activity](https://github-readme-activity-graph.vercel.app/graph?username=taditharun&theme=tokyo-night&hide_border=true)
+
+---
+
+## Connect
+
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/tadi-tharun-674038383)
+[![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/taditharun)
+
+---
+
+![footer](https://capsule-render.vercel.app/api?type=waving&color=0:2C5364,50:203A43,100:0F2027&height=120&section=footer)
