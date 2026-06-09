@@ -1,8 +1,7 @@
+<<<<<<< HEAD
 AWS-Cloud-Journey
 Documenting my AWS cloud learning journey with hands-on labs, notes, CloudFormation templates, and projects.
 
-AWS Cloud Journey ☁️
-Documenting my AWS cloud learning journey through hands-on practice.
 
 Day 1 - Amazon EC2
 Topics Learned
@@ -17,6 +16,7 @@ Hands-On
 Launched Linux EC2 Instance
 Connected to Instance
 Practiced Instance Management
+
 Day 2 - Amazon S3
 Topics Learned
 What is Amazon S3
@@ -28,6 +28,7 @@ Created S3 Bucket
 Uploaded Files
 Downloaded Files
 Deleted Objects
+
 Day 3 - Amazon VPC
 Topics Learned
 What is VPC
@@ -41,6 +42,7 @@ Created VPC
 Created Subnets
 Configured Route Tables
 Configured Security Groups
+
 Day 4 - Load Balancer
 Topics Learned
 Application Load Balancer (ALB)
@@ -136,3 +138,4 @@ CloudFormation
 ## Summary
 
 Today I practiced IAM, S3, and Auto Scaling concepts and gained a better understanding of AWS identity management, storage services, and automatic scaling.
+
