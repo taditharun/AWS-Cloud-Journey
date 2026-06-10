@@ -10,7 +10,8 @@
 * [x] AWS Load Balancers
 * [x] AWS Auto Scaling Groups
 * [x] AWS CloudWatch
-* [ ] AWS CloudTrail
+* [x] AWS CloudTrail
+* [x] AWS Config
 
 ## 🟠 Tier 2 — Important
 
