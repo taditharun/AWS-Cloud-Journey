@@ -194,3 +194,31 @@ Fix:
 * AWS Security Fundamentals
 
 
+# Day 7 - CloudWatch, CloudTrail and AWS Config
+
+## AWS CloudWatch
+
+- Monitors AWS resources and applications.
+- Tracks metrics such as CPU, memory, and network usage.
+- Creates alarms based on thresholds.
+- Helps with monitoring and troubleshooting.
+
+## AWS CloudTrail
+
+- Records AWS account activity.
+- Tracks who performed actions in AWS.
+- Useful for auditing and security investigations.
+- Stores event history.
+
+## AWS Config
+
+- Records AWS resource configurations.
+- Tracks configuration changes over time.
+- Helps with compliance and governance.
+- Provides resource inventory.
+
+## Key Takeaways
+
+- CloudWatch = Monitoring
+- CloudTrail = Audit Logs
+- AWS Config = Configuration Tracking
