@@ -9,7 +9,7 @@
 * [x] AWS VPC Peering
 * [x] AWS Load Balancers
 * [x] AWS Auto Scaling Groups
-* [ ] AWS CloudWatch
+* [x] AWS CloudWatch
 * [ ] AWS CloudTrail
 
 ## 🟠 Tier 2 — Important

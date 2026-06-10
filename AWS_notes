@@ -83,7 +83,7 @@ Documenting my AWS cloud learning journey through hands-on labs and notes.
 
 ---
 
-### Day 5 - IAM, S3 and Auto Scaling
+### Day 5 - IAM, S3 
 
 #### IAM
 
@@ -100,14 +100,92 @@ Documenting my AWS cloud learning journey through hands-on labs and notes.
 * Deleted Objects
 * Deleted Bucket
 
-#### Auto Scaling
+# Day 6 - AWS Auto Scaling
 
-* Launch Templates
-* Auto Scaling Groups
+## Topics Learned
+
+### Auto Scaling Overview
+
+* What is Auto Scaling?
+* Benefits of Auto Scaling
 * Scale Out and Scale In
+* High Availability
 * Cost Optimization
 
----
+### Components of Auto Scaling
+
+#### Launch Template
+
+* Stores EC2 configuration
+* AMI
+* Instance Type
+* Security Group
+* Key Pair
+
+#### Auto Scaling Group (ASG)
+
+* Manages EC2 instances automatically
+* Maintains desired capacity
+* Replaces unhealthy instances
+
+#### Target Group
+
+* Routes traffic to healthy instances
+* Used with Load Balancer
+
+### Capacity Settings
+
+* Minimum Capacity
+* Desired Capacity
+* Maximum Capacity
+
+Example:
+
+* Min = 1
+* Desired = 1
+* Max = 2
+
+### Networking Requirements
+
+* Launch Template Security Group and Auto Scaling Subnets must belong to the same VPC.
+* Security Group VPC must match Subnet VPC.
+
+### Errors Encountered
+
+#### Error 1
+
+Max bound must be greater than or equal to min bound.
+
+Cause:
+
+* Max Size = 1
+* Min Size = 2
+
+Fix:
+
+* Ensure Min ≤ Desired ≤ Max
+
+#### Error 2
+
+One or more security groups in the launch template are not linked to the VPCs configured in the Auto Scaling group.
+
+Cause:
+
+* Security Group and selected subnets belonged to different VPCs.
+
+Fix:
+
+* Use Security Groups and Subnets from the same VPC.
+
+## Key Takeaways
+
+* Launch Templates define instance configuration.
+* Auto Scaling Groups automatically manage EC2 instances.
+* Capacity values must follow:
+  Min ≤ Desired ≤ Max
+* Security Groups and Subnets must belong to the same VPC.
+* Auto Scaling improves availability and scalability.
+
 
 ## Current Goal
 
@@ -115,11 +193,4 @@ Documenting my AWS cloud learning journey through hands-on labs and notes.
 * Cloud Engineering
 * AWS Security Fundamentals
 
-## Upcoming Topics
 
-* Route 53
-* CloudWatch
-* RDS
-* Lambda
-* CloudFormation
-* Systems Manager (SSM)
