@@ -222,3 +222,42 @@ Fix:
 - CloudWatch = Monitoring
 - CloudTrail = Audit Logs
 - AWS Config = Configuration Tracking
+
+
+# Day 8 - AWS Route 53
+
+## Topics Learned
+
+### What is Route 53?
+- AWS Domain Name System (DNS) service.
+- Routes users to AWS resources using domain names.
+
+### Routing Policies
+
+#### Simple Routing
+- One domain to one resource.
+
+#### Weighted Routing
+- Splits traffic by percentage.
+
+#### Latency-Based Routing
+- Routes users to the lowest latency region.
+
+#### Failover Routing
+- Sends traffic to backup resources if primary resources fail.
+
+#### Geolocation Routing
+- Routes traffic based on user location.
+
+#### Geoproximity Routing
+- Routes traffic based on distance from AWS resources.
+
+#### Multi-Value Answer Routing
+- Returns multiple healthy resource IPs.
+
+## Key Takeaways
+
+- Route 53 is AWS's DNS service.
+- Converts domain names into IP addresses.
+- Supports multiple routing policies for availability and performance.
+- Integrates with EC2, Load Balancers, S3, and other AWS services.
