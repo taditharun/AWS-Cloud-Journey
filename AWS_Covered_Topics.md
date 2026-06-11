@@ -17,7 +17,7 @@
 
 * [ ] AWS EBS
 * [ ] AWS EBS Snapshots
-* [ ] AWS Route53
+* [x] AWS Route53
 * [ ] AWS Lambda
 * [ ] AWS RDS
 * [ ] AWS KMS
