@@ -147,6 +147,36 @@ Example:
 
 ### Networking Requirements
 
+
+Day 8: Amazon EBS & Snapshots Completed ✅
+
+* Learned Amazon EBS (Elastic Block Store) and its role as persistent block storage for EC2 instances.
+* Explored EBS volume types and their use cases.
+* Learned how to create, attach, detach, and resize EBS volumes.
+* Understood the difference between EBS and Instance Store.
+* Studied EBS Snapshots for backup and disaster recovery.
+* Learned that EBS snapshots are incremental backups.
+* Explored how to create EBS volumes from snapshots.
+* Learned how to copy snapshots across AWS Regions.
+* Understood snapshot use cases for backup, recovery, migration, and disaster recovery.
+* Compared EBS volumes and snapshots.
+
+Key Concepts Covered:
+
+* Amazon EBS
+* EBS Volume Types
+* Persistent Storage
+* Block Storage
+* EBS Snapshots
+* Incremental Backups
+* Restore from Snapshot
+* Cross-Region Snapshot Copy
+* Disaster Recovery
+
+Status: Day 8 Completed ✅
+
+Next Topic: Amazon RDS 🚀
+
 * Launch Template Security Group and Auto Scaling Subnets must belong to the same VPC.
 * Security Group VPC must match Subnet VPC.
 
