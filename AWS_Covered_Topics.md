@@ -15,10 +15,10 @@
 
 ## 🟠 Tier 2 — Important
 
-* [ ] AWS EBS
-* [ ] AWS EBS Snapshots
+* [x] AWS EBS
+* [x] AWS EBS Snapshots
 * [x] AWS Route53
-* [ ] AWS Lambda
+* [x] AWS Lambda
 * [ ] AWS RDS
 * [ ] AWS KMS
 * [ ] AWS Secrets Manager
