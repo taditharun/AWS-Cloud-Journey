@@ -291,3 +291,48 @@ Fix:
 - Converts domain names into IP addresses.
 - Supports multiple routing policies for availability and performance.
 - Integrates with EC2, Load Balancers, S3, and other AWS services.
+
+
+
+# Day 9 - AWS RDS
+
+## Topics Covered
+- Introduction to Amazon RDS
+- Managed Database Service
+- RDS Instance Creation
+- Database Cluster Basics
+- Automated Backups
+- Manual Snapshots
+- Snapshot Deletion
+- Database Deletion
+- Basic Aurora Concepts
+
+## Key Learnings
+- Amazon RDS is a managed relational database service.
+- AWS handles patching, backups, and maintenance.
+- Snapshots can be used for backup and recovery.
+- RDS supports MySQL, PostgreSQL, MariaDB, Oracle, SQL Server, and Aurora.
+- Aurora provides higher performance and availability compared to standard RDS engines.
+
+## Hands-On Activities
+- Created an RDS database instance
+- Created a manual snapshot
+- Deleted the database instance
+- Deleted the snapshot
+- Explored RDS events and monitoring
+
+## Important Concepts
+- Multi-AZ Deployment
+- Read Replicas
+- Automated Backups
+- Snapshots
+- Database Security Groups
+- Encryption at Rest
+
+## Services Used
+- Amazon RDS
+- Amazon Aurora
+- AWS IAM
+- AWS KMS (Overview)
+
+Status: ✅ Completed
