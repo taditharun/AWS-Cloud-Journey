@@ -19,7 +19,8 @@
 * [x] AWS EBS Snapshots
 * [x] AWS Route53
 * [x] AWS Lambda
-* [ ] AWS RDS
+* [x] AWS RDS
+* [x] AWS Event bridge
 * [ ] AWS KMS
 * [ ] AWS Secrets Manager
 * [ ] AWS ACM
