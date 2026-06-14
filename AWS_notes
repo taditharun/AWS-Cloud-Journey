@@ -336,3 +336,96 @@ Fix:
 - AWS KMS (Overview)
 
 Status: ✅ Completed
+
+
+# Cloud Journey - Day 10
+
+## Topics Learned
+
+* AWS Key Management Service (KMS)
+* AWS Secrets Manager
+
+## AWS KMS (Key Management Service)
+
+### What is KMS?
+
+AWS KMS is a managed service used to create and manage encryption keys. It helps protect data by encrypting and decrypting information securely.
+
+### Key Concepts
+
+* Customer Managed Keys (CMKs)
+* AWS Managed Keys
+* Encryption and Decryption
+* Key Rotation
+* IAM and KMS Policies
+
+### Common Use Cases
+
+* Encrypting EBS volumes
+* Encrypting S3 buckets
+* Encrypting RDS databases
+* Protecting application data
+* Encrypting secrets stored in AWS Secrets Manager
+
+### Benefits
+
+* Centralized key management
+* Automatic key rotation
+* Fine-grained access control
+* Integration with multiple AWS services
+
+---
+
+## AWS Secrets Manager
+
+### What is Secrets Manager?
+
+AWS Secrets Manager is used to securely store, manage, and retrieve secrets such as passwords, API keys, database credentials, and tokens.
+
+### Examples of Secrets
+
+* Database passwords
+* API keys
+* OAuth tokens
+* Application credentials
+
+### Features
+
+* Secure secret storage
+* Automatic secret rotation
+* Integration with AWS services
+* Fine-grained IAM access control
+
+### Benefits
+
+* Eliminates hardcoded credentials
+* Improves security
+* Simplifies secret rotation
+* Centralized secret management
+
+---
+
+## KMS vs Secrets Manager
+
+| AWS KMS                    | AWS Secrets Manager                |
+| -------------------------- | ---------------------------------- |
+| Manages encryption keys    | Manages secrets and credentials    |
+| Encrypts and decrypts data | Stores passwords, API keys, tokens |
+| Used by many AWS services  | Often uses KMS for encryption      |
+| Focused on key management  | Focused on secret management       |
+
+### Relationship
+
+Application
+↓
+Secrets Manager
+↓
+KMS Encryption Key
+↓
+Encrypted Secret
+
+Secrets Manager stores the secret, while KMS encrypts and protects it.
+
+## Key Takeaway
+
+KMS is used to manage encryption keys and protect data, while Secrets Manager is used to securely store and manage sensitive credentials such as passwords and API keys.
