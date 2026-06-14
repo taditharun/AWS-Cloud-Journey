@@ -21,8 +21,8 @@
 * [x] AWS Lambda
 * [x] AWS RDS
 * [x] AWS Event bridge
-* [ ] AWS KMS
-* [ ] AWS Secrets Manager
+* [x] AWS KMS
+* [x] AWS Secrets Manager
 * [ ] AWS ACM
 
 ## 🟡 Tier 3 — Good to Know
