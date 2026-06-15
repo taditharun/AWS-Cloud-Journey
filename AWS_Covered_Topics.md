@@ -23,7 +23,7 @@
 * [x] AWS Event bridge
 * [x] AWS KMS
 * [x] AWS Secrets Manager
-* [ ] AWS ACM
+* [x] AWS ACM
 
 ## 🟡 Tier 3 — Good to Know
 
