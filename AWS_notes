@@ -148,7 +148,7 @@ Example:
 ### Networking Requirements
 
 
-Day 8: Amazon EBS & Snapshots Completed ✅
+Day 7: Amazon EBS & Snapshots Completed 
 
 * Learned Amazon EBS (Elastic Block Store) and its role as persistent block storage for EC2 instances.
 * Explored EBS volume types and their use cases.
@@ -173,9 +173,9 @@ Key Concepts Covered:
 * Cross-Region Snapshot Copy
 * Disaster Recovery
 
-Status: Day 8 Completed ✅
+Status: Day 7 Completed 
 
-Next Topic: Amazon RDS 🚀
+Next Topic: Amazon RDS 
 
 * Launch Template Security Group and Auto Scaling Subnets must belong to the same VPC.
 * Security Group VPC must match Subnet VPC.
@@ -224,7 +224,7 @@ Fix:
 * AWS Security Fundamentals
 
 
-# Day 7 - CloudWatch, CloudTrail and AWS Config
+# Day 8 - CloudWatch, CloudTrail and AWS Config
 
 ## AWS CloudWatch
 
@@ -254,7 +254,7 @@ Fix:
 - AWS Config = Configuration Tracking
 
 
-# Day 8 - AWS Route 53
+# Day 9 - AWS Route 53
 
 ## Topics Learned
 
@@ -294,7 +294,7 @@ Fix:
 
 
 
-# Day 9 - AWS RDS
+# Day 10 - AWS RDS
 
 ## Topics Covered
 - Introduction to Amazon RDS
@@ -335,10 +335,9 @@ Fix:
 - AWS IAM
 - AWS KMS (Overview)
 
-Status: ✅ Completed
 
 
-# Cloud Journey - Day 10
+# Cloud Journey - Day 11
 
 ## Topics Learned
 
@@ -429,3 +428,144 @@ Secrets Manager stores the secret, while KMS encrypts and protects it.
 ## Key Takeaway
 
 KMS is used to manage encryption keys and protect data, while Secrets Manager is used to securely store and manage sensitive credentials such as passwords and API keys.
+
+
+# Cloud Journey - Day 11
+
+## Topic Learned
+
+* AWS Certificate Manager (ACM)
+
+## What is ACM?
+
+AWS Certificate Manager (ACM) is a service used to provision, manage, and automatically renew SSL/TLS certificates for AWS resources.
+
+ACM helps secure websites and applications by enabling HTTPS communication.
+
+---
+
+## Why ACM is Needed
+
+Without HTTPS:
+
+```text
+User
+ ↓
+HTTP
+ ↓
+Website
+```
+
+Data is transferred in plain text.
+
+With ACM:
+
+```text
+User
+ ↓
+HTTPS
+ ↓
+ACM Certificate
+ ↓
+Website
+```
+
+Data is encrypted and transmitted securely.
+
+---
+
+## Key Concepts
+
+### SSL/TLS Certificates
+
+* Used to enable HTTPS.
+* Encrypt communication between clients and servers.
+* Verify the identity of a website.
+
+### Domain Validation
+
+Before issuing a certificate, ACM verifies ownership of the domain using:
+
+* DNS Validation (recommended)
+* Email Validation
+
+### Automatic Renewal
+
+ACM automatically renews eligible certificates before expiration.
+
+---
+
+## AWS Services Integrated with ACM
+
+* Application Load Balancer (ALB)
+* CloudFront
+* API Gateway
+* Elastic Beanstalk
+
+---
+
+## Common Architecture
+
+```text
+User
+ ↓
+Route 53
+ ↓
+ALB + ACM Certificate
+ ↓
+EC2
+```
+
+Route 53 resolves the domain, ACM provides the SSL/TLS certificate, and ALB serves HTTPS traffic securely.
+
+---
+
+## Benefits of ACM
+
+* Free public SSL/TLS certificates
+* Automatic certificate renewal
+* Easy integration with AWS services
+* Improved security
+* Enables HTTPS communication
+
+---
+
+## ACM vs Route 53
+
+| ACM                          | Route 53              |
+| ---------------------------- | --------------------- |
+| Manages SSL/TLS certificates | Manages DNS records   |
+| Enables HTTPS                | Routes traffic        |
+| Provides encryption          | Resolves domain names |
+
+---
+
+## ACM vs KMS
+
+| ACM                          | KMS                      |
+| ---------------------------- | ------------------------ |
+| Manages SSL/TLS certificates | Manages encryption keys  |
+| Used for HTTPS security      | Used for data encryption |
+| Secures communication        | Secures stored data      |
+
+---
+
+## Interview Questions
+
+### What is AWS ACM?
+
+AWS Certificate Manager (ACM) is a service that provisions, manages, and automatically renews SSL/TLS certificates used to secure AWS applications and websites.
+
+### Why use ACM?
+
+To enable HTTPS, encrypt data in transit, verify domain ownership, and simplify certificate management.
+
+### Which AWS services commonly use ACM?
+
+ALB, CloudFront, API Gateway, and Elastic Beanstalk.
+
+---
+
+## Key Takeaway
+
+ACM simplifies SSL/TLS certificate management in AWS by providing free certificates, automatic renewal, and seamless integration with AWS services to secure applications using HTTPS.
