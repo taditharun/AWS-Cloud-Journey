@@ -27,8 +27,8 @@
 
 ## 🟡 Tier 3 — Good to Know
 
-* [ ] AWS EFS
-* [ ] AWS Systems Manager
+* [x] AWS EFS
+* [x] AWS Systems Manager
 * [ ] AWS API Gateway
 * [ ] AWS DynamoDB
 * [ ] AWS SNS
