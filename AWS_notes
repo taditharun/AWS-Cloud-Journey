@@ -568,4 +568,67 @@ ALB, CloudFront, API Gateway, and Elastic Beanstalk.
 
 ## Key Takeaway
 
-ACM simplifies SSL/TLS certificate management in AWS by providing free certificates, automatic renewal, and seamless integration with AWS services to secure applications using HTTPS.
+ACM simplifies SSL/TLS certificate management in AWS by providing free certificates, automatic renewal, and seamless integration with AWS services to secure applications using HTTP
+
+
+# Day 12 - AWS EFS & AWS Systems Manager
+
+## Topics Covered
+
+### Amazon EFS (Elastic File System)
+
+* Fully managed file storage service
+* Shared storage for multiple EC2 instances
+* Automatically scales storage capacity
+* Supports Linux file systems
+* High availability across Availability Zones
+
+### AWS Systems Manager (SSM)
+
+* Centralized management of AWS resources
+* Session Manager for secure EC2 access
+* Run Command for remote command execution
+* Parameter Store for configuration management
+* Patch Manager for automated patching
+
+## Hands-On Learning
+
+### Amazon EFS
+
+* Learned EFS architecture
+* Understood EFS mount targets
+* Compared EFS with EBS
+* Explored shared storage use cases
+
+### AWS Systems Manager
+
+* Explored Session Manager
+* Learned agent-based EC2 management
+* Understood Run Command functionality
+* Reviewed Parameter Store basics
+
+## Key Takeaways
+
+### EFS vs EBS
+
+| Feature             | EBS           | EFS          |
+| ------------------- | ------------- | ------------ |
+| Storage Type        | Block Storage | File Storage |
+| Shared Access       | No            | Yes          |
+| Multiple EC2 Access | No            | Yes          |
+| Scaling             | Manual        | Automatic    |
+
+### Systems Manager Benefits
+
+* Manage EC2 without SSH keys
+* Execute commands remotely
+* Improve security and operational efficiency
+* Centralized server management
+
+## Services Used
+
+* Amazon EFS
+* AWS Systems Manager
+* Amazon EC2
+* IAM
+
