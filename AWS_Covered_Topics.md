@@ -29,7 +29,7 @@
 
 * [x] AWS EFS
 * [x] AWS Systems Manager
-* [ ] AWS API Gateway
+* [x] AWS API Gateway
 * [ ] AWS DynamoDB
 * [ ] AWS SNS
 * [ ] AWS SQS
