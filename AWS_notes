@@ -632,3 +632,62 @@ ACM simplifies SSL/TLS certificate management in AWS by providing free certifica
 * Amazon EC2
 * IAM
 
+# Day 13 - AWS API Gateway
+
+## What is API Gateway?
+
+Amazon API Gateway is a fully managed service that allows developers to create, publish, secure, monitor, and manage APIs.
+
+## Why Use API Gateway?
+
+* Acts as a front door for applications
+* Routes requests to backend services
+* Supports Lambda, EC2, ECS, and EKS
+* Provides authentication and authorization
+* Supports monitoring and throttling
+
+## Architecture
+
+User → API Gateway → Lambda / EC2 / ECS / EKS
+
+## Common Use Case
+
+User requests weather data:
+
+User → API Gateway → Lambda → Response
+
+## API Types
+
+### HTTP API
+
+* Low cost
+* High performance
+* Simple applications
+
+### REST API
+
+* More features
+* Most commonly used
+
+### WebSocket API
+
+* Real-time communication
+* Chat applications
+* Live notifications
+
+## Security Features
+
+* IAM
+* Amazon Cognito
+* API Keys
+* Lambda Authorizers
+
+## Interview Question
+
+Q: What is API Gateway?
+
+A: API Gateway is a managed AWS service that enables developers to create, publish, secure, monitor, and manage APIs at scale.
+
+## Key Learning
+
+API Gateway acts as a front door between users and backend services such as Lambda, EC2, ECS, and EKS.
