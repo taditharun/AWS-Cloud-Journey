@@ -691,3 +691,69 @@ A: API Gateway is a managed AWS service that enables developers to create, publi
 ## Key Learning
 
 API Gateway acts as a front door between users and backend services such as Lambda, EC2, ECS, and EKS.
+
+
+# Day 14 - AWS DynamoDB
+
+## Topics Covered
+
+* Introduction to Amazon DynamoDB
+* NoSQL Database Concepts
+* Tables, Items, and Attributes
+* Partition Keys
+* Primary Keys
+* Read and Write Operations
+* DynamoDB Capacity Modes
+* DynamoDB Security and IAM Integration
+
+## Key Learnings
+
+* DynamoDB is a fully managed NoSQL database service.
+* Data is stored in Tables, Items, and Attributes.
+* DynamoDB provides high scalability and low latency.
+* No server management is required.
+* Integrates with Lambda, API Gateway, and IAM.
+
+## Hands-On Activities
+
+* Created a DynamoDB table
+* Added items to the table
+* Retrieved items from the table
+* Explored table configuration
+* Reviewed partition key usage
+
+## DynamoDB vs RDS
+
+| Feature           | DynamoDB            | RDS                 |
+| ----------------- | ------------------- | ------------------- |
+| Database Type     | NoSQL               | Relational SQL      |
+| Scaling           | Automatic           | Manual/Auto Scaling |
+| Schema            | Flexible            | Fixed               |
+| Performance       | Millisecond Latency | Depends on Instance |
+| Server Management | None                | Managed by AWS      |
+
+## Common Use Cases
+
+* Serverless Applications
+* User Profiles
+* Gaming Applications
+* IoT Data Storage
+* Real-Time Applications
+
+## Architecture Example
+
+User
+↓
+API Gateway
+↓
+Lambda
+↓
+DynamoDB
+
+## Services Used
+
+* Amazon DynamoDB
+* AWS IAM
+* AWS Lambda (Concept)
+* API Gateway (Concept)
+
