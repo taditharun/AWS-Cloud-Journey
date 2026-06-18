@@ -30,7 +30,7 @@
 * [x] AWS EFS
 * [x] AWS Systems Manager
 * [x] AWS API Gateway
-* [ ] AWS DynamoDB
+* [x] AWS DynamoDB
 * [ ] AWS SNS
 * [ ] AWS SQS
 * [ ] AWS ECR
