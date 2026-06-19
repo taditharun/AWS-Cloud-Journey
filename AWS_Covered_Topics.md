@@ -31,7 +31,7 @@
 * [x] AWS Systems Manager
 * [x] AWS API Gateway
 * [x] AWS DynamoDB
-* [ ] AWS SNS
+* [x] AWS SNS
 * [ ] AWS SQS
 * [ ] AWS ECR
 * [ ] AWS EKS
