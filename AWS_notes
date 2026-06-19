@@ -757,3 +757,122 @@ DynamoDB
 * AWS Lambda (Concept)
 * API Gateway (Concept)
 
+# Day 15 - Amazon SQS (Simple Queue Service)
+
+## What is Amazon SQS?
+
+Amazon SQS is a fully managed message queuing service that enables decoupling of applications and microservices.
+
+Instead of services communicating directly, they communicate through a queue.
+
+---
+
+## Why Use SQS?
+
+* Decouple applications
+* Improve scalability
+* Increase fault tolerance
+* Handle traffic spikes
+* Enable asynchronous processing
+
+---
+
+## How SQS Works
+
+Producer → SQS Queue → Consumer
+
+1. Producer sends a message to the queue.
+2. SQS stores the message.
+3. Consumer retrieves and processes the message.
+4. Message is deleted after successful processing.
+
+---
+
+## Types of SQS Queues
+
+### Standard Queue
+
+* Nearly unlimited throughput
+* At-least-once delivery
+* Best-effort ordering
+* Most commonly used
+
+### FIFO Queue
+
+* First-In-First-Out ordering
+* Exactly-once processing
+* Limited throughput compared to Standard Queue
+* Suitable for financial and transactional applications
+
+---
+
+## Key Concepts
+
+### Message
+
+Data sent to the queue.
+
+### Producer
+
+Application sending messages.
+
+### Consumer
+
+Application receiving messages.
+
+### Visibility Timeout
+
+Time during which a received message remains invisible to other consumers.
+
+### Dead Letter Queue (DLQ)
+
+Stores messages that fail processing multiple times.
+
+---
+
+## Benefits
+
+* Fully managed service
+* Highly available
+* Secure
+* Scalable
+* Integrates with AWS services
+
+---
+
+## Common Integrations
+
+* SQS + Lambda
+* SQS + EC2
+* SQS + SNS
+* SQS + Auto Scaling
+
+---
+
+## Real-World Example
+
+E-commerce Order Processing:
+
+Customer Places Order
+→ SQS Queue
+→ Order Processing Service
+→ Payment Service
+→ Shipping Service
+
+Even if one service is busy, messages remain safely in the queue.
+
+---
+
+## AWS Cloud Practitioner Exam Points
+
+* SQS is a managed message queue service.
+* Used to decouple applications.
+* Standard Queue = High throughput.
+* FIFO Queue = Ordered processing.
+* DLQ stores failed messages.
+* Supports asynchronous communication.
+
+## Summary
+
+Amazon SQS helps applications communicate reliably through queues, improving scalability, fault tolerance, and application decoupling.
+
