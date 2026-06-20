@@ -876,3 +876,63 @@ Even if one service is busy, messages remain safely in the queue.
 
 Amazon SQS helps applications communicate reliably through queues, improving scalability, fault tolerance, and application decoupling.
 
+# Day 16 – Amazon SNS (Simple Notification Service)
+
+## Overview
+
+Amazon SNS is a fully managed publish/subscribe (Pub/Sub) messaging service that enables applications to send notifications to multiple subscribers simultaneously.
+
+## Key Features
+
+* Fully managed and scalable
+* Publish/Subscribe messaging model
+* Supports Email, SMS, SQS, Lambda, and HTTP/HTTPS endpoints
+* Integrates with AWS services such as CloudWatch and Lambda
+* Enables fan-out messaging
+
+## How SNS Works
+
+Publisher → SNS Topic → Multiple Subscribers
+
+Example:
+
+Application → SNS Topic → Email
+
+```
+                     → SQS
+
+                     → Lambda
+
+                     → SMS
+```
+
+## Common Use Cases
+
+* Application notifications
+* CloudWatch alerts
+* Order confirmations
+* Fan-out messaging architectures
+* Real-time system monitoring
+
+## SNS vs SQS
+
+| Amazon SNS                | Amazon SQS                    |
+| ------------------------- | ----------------------------- |
+| Push Model                | Pull Model                    |
+| Sends to many subscribers | Processes messages one by one |
+| Notification service      | Message queue service         |
+| Fan-out messaging         | Decoupling applications       |
+
+## Exam Tips
+
+Choose **SNS** when the requirement includes:
+
+* Send notifications
+* Multiple recipients
+* Email or SMS alerts
+* Publish/Subscribe model
+* Fan-out architecture
+
+## Summary
+
+Amazon SNS is a fully managed notification service that delivers messages from a publisher to multiple subscribers using the publish/subscribe model.
