@@ -32,7 +32,7 @@
 * [x] AWS API Gateway
 * [x] AWS DynamoDB
 * [x] AWS SNS
-* [ ] AWS SQS
+* [x] AWS SQS
 * [ ] AWS ECR
 * [ ] AWS EKS
 
