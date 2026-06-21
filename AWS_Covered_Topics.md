@@ -33,7 +33,7 @@
 * [x] AWS DynamoDB
 * [x] AWS SNS
 * [x] AWS SQS
-* [ ] AWS ECR
+* [x] AWS ECR
 * [ ] AWS EKS
 
 ## 🟢 Tier 4 — Later
