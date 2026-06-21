@@ -936,3 +936,70 @@ Choose **SNS** when the requirement includes:
 ## Summary
 
 Amazon SNS is a fully managed notification service that delivers messages from a publisher to multiple subscribers using the publish/subscribe model.
+
+
+# Day 17 – Amazon ECR (Elastic Container Registry)
+
+## Overview
+
+Amazon Elastic Container Registry (Amazon ECR) is a fully managed container image registry service that makes it easy to store, manage, share, and deploy Docker container images securely.
+
+## Why ECR?
+
+Containers need a place to store their images before deployment. Amazon ECR acts as a central repository for container images and integrates seamlessly with Amazon ECS, Amazon EKS, and AWS Lambda.
+
+## Key Features
+
+* Fully managed container image registry
+* Secure image storage with IAM integration
+* Image versioning and lifecycle policies
+* Vulnerability scanning for container images
+* High availability and scalability
+* Integration with ECS, EKS, and CI/CD pipelines
+
+## How ECR Works
+
+Developer → Build Docker Image → Push to ECR → Deploy to ECS/EKS
+
+Example:
+
+1. Create Docker image
+2. Push image to ECR repository
+3. ECS or EKS pulls image from ECR
+4. Application runs in containers
+
+## Common Use Cases
+
+* Storing Docker images
+* Containerized application deployments
+* CI/CD automation pipelines
+* Kubernetes (EKS) workloads
+* Microservices architectures
+
+## Benefits
+
+* Eliminates the need to manage container registries
+* Secure image storage and access control
+* Simplifies container deployment workflows
+* Supports automated image scanning
+
+## ECR vs S3
+
+| Amazon ECR              | Amazon S3                      |
+| ----------------------- | ------------------------------ |
+| Stores container images | Stores files and objects       |
+| Used by ECS/EKS         | General-purpose storage        |
+| Supports image scanning | No container-specific features |
+
+## Exam Tips
+
+Choose Amazon ECR when:
+
+* Storing Docker container images
+* Deploying applications using ECS or EKS
+* Managing container image repositories
+* Securing and scanning container images
+
+## Summary
+
+Amazon ECR is a fully managed container image registry service used to store, manage, secure, and deploy Docker container images for containerized applications on AWS.
