@@ -1003,3 +1003,69 @@ Choose Amazon ECR when:
 ## Summary
 
 Amazon ECR is a fully managed container image registry service used to store, manage, secure, and deploy Docker container images for containerized applications on AWS.
+
+
+# Day 18 – Amazon EKS (Elastic Kubernetes Service)
+
+## Overview
+
+Amazon Elastic Kubernetes Service (Amazon EKS) is a fully managed Kubernetes service that makes it easy to run, manage, and scale containerized applications on AWS.
+
+## Why EKS?
+
+Kubernetes is the industry-standard platform for container orchestration. Amazon EKS removes the complexity of managing the Kubernetes control plane and allows teams to focus on deploying applications.
+
+## Key Features
+
+* Fully managed Kubernetes control plane
+* High availability and automatic scaling
+* Integration with AWS services
+* Supports Docker containers
+* Secure with IAM and VPC integration
+* Compatible with standard Kubernetes tools
+
+## How EKS Works
+
+Developer → Docker Image → ECR → EKS Cluster → Running Containers
+
+1. Build a Docker image
+2. Store the image in Amazon ECR
+3. Deploy the application to an EKS cluster
+4. Kubernetes manages scaling, scheduling, and availability
+
+## Common Use Cases
+
+* Microservices applications
+* Large-scale container deployments
+* Hybrid and multi-cloud environments
+* Modern application platforms
+* DevOps and CI/CD workflows
+
+## Benefits
+
+* Eliminates Kubernetes control plane management
+* High availability across Availability Zones
+* Automatic updates and monitoring
+* Scalable and secure container orchestration
+
+## ECS vs EKS
+
+| Amazon ECS                         | Amazon EKS                       |
+| ---------------------------------- | -------------------------------- |
+| AWS-native container orchestration | Kubernetes-based orchestration   |
+| Easier to learn and manage         | More flexibility and portability |
+| AWS-specific                       | Industry-standard Kubernetes     |
+| Best for AWS-focused workloads     | Best for Kubernetes environments |
+
+## Exam Tips
+
+Choose Amazon EKS when:
+
+* Kubernetes is required
+* Running containerized applications at scale
+* Migrating existing Kubernetes workloads to AWS
+* Need Kubernetes compatibility across environments
+
+## Summary
+
+Amazon EKS is a fully managed Kubernetes service that simplifies deploying, managing, and scaling containerized applications using Kubernetes on AWS.
