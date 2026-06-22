@@ -34,7 +34,7 @@
 * [x] AWS SNS
 * [x] AWS SQS
 * [x] AWS ECR
-* [ ] AWS EKS
+* [x] AWS EKS
 
 ## 🟢 Tier 4 — Later
 
