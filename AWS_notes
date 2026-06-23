@@ -1069,3 +1069,70 @@ Choose Amazon EKS when:
 ## Summary
 
 Amazon EKS is a fully managed Kubernetes service that simplifies deploying, managing, and scaling containerized applications using Kubernetes on AWS.
+
+
+
+# Day 19 – Amazon SES (Simple Email Service)
+
+## Overview
+
+Amazon Simple Email Service (Amazon SES) is a cloud-based email service that enables businesses and applications to send and receive emails securely, reliably, and at scale.
+
+## Key Features
+
+* Send transactional and marketing emails
+* Highly scalable and cost-effective
+* Supports SMTP and API integration
+* Email receiving capability
+* Built-in spam and virus filtering
+* Monitors delivery, bounces, and complaints
+
+## How SES Works
+
+Application → Amazon SES → Recipient Email
+
+Examples:
+
+* Account verification emails
+* Password reset emails
+* Order confirmations
+* Marketing campaigns
+* Notifications and alerts
+
+## Common Use Cases
+
+* User registration verification
+* Password reset emails
+* Order and payment confirmations
+* Marketing and promotional emails
+* Automated application notifications
+
+## Benefits
+
+* Fully managed email service
+* High email deliverability
+* Easy integration with applications
+* Scales automatically
+* Pay only for what you use
+
+## SES vs SNS
+
+| Amazon SES                         | Amazon SNS                            |
+| ---------------------------------- | ------------------------------------- |
+| Email service                      | Notification service                  |
+| Sends emails                       | Sends notifications                   |
+| Marketing and transactional emails | SMS, email, Lambda, SQS notifications |
+| Supports email receiving           | Focused on message delivery           |
+
+## Exam Tips
+
+Choose Amazon SES when:
+
+* Sending bulk emails
+* Sending transactional emails
+* Email marketing campaigns
+* Email verification and password resets
+
+## Summary
+
+Amazon SES is a fully managed email service used to send, receive, and manage transactional and marketing emails at scale.
