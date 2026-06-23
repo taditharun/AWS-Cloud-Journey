@@ -38,7 +38,7 @@
 
 ## 🟢 Tier 4 — Later
 
-* [ ] AWS SES
+* [x] AWS SES
 * [ ] AWS Pricing Calculator
 * [ ] On-Premises to AWS Migration
 
