@@ -24,6 +24,9 @@
 * [x] AWS KMS
 * [x] AWS Secrets Manager
 * [x] AWS ACM
+* [ ] Amazon ECS
+* [ ] AWS Organizations
+* [ ] AWS Identity Center
 
 ## 🟡 Tier 3 — Good to Know
 
@@ -42,3 +45,69 @@
 * [x] AWS Pricing Calculator
 * [ ] On-Premises to AWS Migration
 
+## 🟣 Tier 5 — Security Services
+
+* [ ] AWS Organizations
+* [ ] AWS Identity Center
+* [ ] Amazon GuardDuty
+* [ ] Amazon Inspector
+* [ ] Amazon Macie
+* [ ] AWS WAF
+* [ ] AWS Shield
+* [ ] AWS Shield Advanced
+* [ ] AWS Firewall Manager
+* [ ] IAM Access Analyzer
+
+## 🔵 Tier 6 — Cost Management
+
+* [ ] AWS Cost Explorer
+* [ ] AWS Budgets
+* [ ] AWS Billing Dashboard
+* [ ] AWS Trusted Advisor
+* [ ] AWS Health Dashboard
+
+## 🟡 Tier 7 — Migration Services
+
+* [ ] AWS Storage Gateway
+* [ ] AWS Database Migration Service (DMS)
+* [ ] AWS Schema Conversion Tool (SCT)
+* [ ] AWS DataSync
+* [ ] AWS Transfer Family
+* [ ] AWS Snow Family
+
+## 🟠 Tier 8 — Containers & DevOps
+
+* [ ] Amazon ECS
+* [ ] AWS CloudFormation
+* [ ] AWS Elastic Beanstalk
+* [ ] AWS Step Functions
+* [ ] AWS App Runner
+
+## ⚪ Tier 9 — Analytics
+
+* [ ] Amazon Athena
+* [ ] AWS Glue
+* [ ] Amazon Redshift
+* [ ] Amazon QuickSight
+* [ ] Amazon Kinesis
+
+## 🤖 Tier 10 — AI/ML
+
+* [ ] Amazon Bedrock
+* [ ] Amazon SageMaker
+* [ ] Amazon Textract
+* [ ] Amazon Rekognition
+* [ ] Amazon Comprehend
+* [ ] Amazon Translate
+* [ ] Amazon Transcribe
+* [ ] Amazon Polly
+* [ ] Amazon Lex
+
+## 🟤 Tier 11 — Advanced Services
+
+* [ ] Amazon ElastiCache
+* [ ] Amazon FSx
+* [ ] Amazon OpenSearch Service
+* [ ] Amazon Neptune
+* [ ] Amazon DocumentDB
+* [ ] AWS Backup
