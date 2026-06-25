@@ -1136,3 +1136,73 @@ Choose Amazon SES when:
 ## Summary
 
 Amazon SES is a fully managed email service used to send, receive, and manage transactional and marketing emails at scale.
+
+# Day 20 – AWS Pricing Calculator
+
+## Overview
+
+AWS Pricing Calculator is a free web-based tool that helps estimate the cost of AWS services before deploying resources. It allows users to create pricing estimates based on their planned architecture and usage.
+
+## Key Features
+
+* Estimate AWS costs before deployment
+* Supports multiple AWS services
+* Compare different service configurations
+* Monthly and yearly cost estimates
+* Save and share pricing estimates
+* No AWS account required
+
+## How It Works
+
+1. Select an AWS service (EC2, S3, RDS, etc.)
+2. Configure resource specifications
+3. Enter expected usage
+4. Review the estimated monthly cost
+
+Example:
+
+EC2 Instance → t3.micro
+
+Storage → 100 GB EBS
+
+Region → Mumbai
+
+Estimated Monthly Cost → Displayed by the calculator
+
+## Common Use Cases
+
+* Budget planning
+* Cost estimation before deployment
+* Comparing AWS service configurations
+* Preparing project proposals
+* Cloud migration cost analysis
+
+## Benefits
+
+* Free to use
+* Improves budgeting accuracy
+* Helps optimize AWS resource selection
+* Supports architecture cost planning
+* Easy to share estimates with teams
+
+## AWS Pricing Calculator vs AWS Cost Explorer
+
+| AWS Pricing Calculator    | AWS Cost Explorer                  |
+| ------------------------- | ---------------------------------- |
+| Estimates future costs    | Analyzes existing costs            |
+| Used before deployment    | Used after deployment              |
+| Planning and budgeting    | Cost analysis and forecasting      |
+| No AWS resources required | Requires an AWS account with usage |
+
+## Exam Tips
+
+Choose AWS Pricing Calculator when:
+
+* Estimating AWS costs before deployment
+* Comparing infrastructure costs
+* Planning cloud budgets
+* Creating pricing estimates for customers
+
+## Summary
+
+AWS Pricing Calculator is a free planning tool used to estimate the expected cost of AWS resources before they are deployed, helping organizations budget and optimize their cloud infrastructure.
