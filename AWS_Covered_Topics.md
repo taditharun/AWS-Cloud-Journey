@@ -43,7 +43,7 @@
 
 * [x] AWS SES
 * [x] AWS Pricing Calculator
-* [ ] On-Premises to AWS Migration
+* [x] On-Premises to AWS Migration
 
 ## 🟣 Tier 5 — Security Services
 
