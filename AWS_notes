@@ -1206,3 +1206,159 @@ Choose AWS Pricing Calculator when:
 ## Summary
 
 AWS Pricing Calculator is a free planning tool used to estimate the expected cost of AWS resources before they are deployed, helping organizations budget and optimize their cloud infrastructure.
+# Day 21 – On-Premises to AWS Migration
+
+## Overview
+
+On-premises to AWS migration is the process of moving applications, servers, databases, and data from a company's own data center to the AWS Cloud.
+
+## Why Migrate to AWS?
+
+* Reduce infrastructure costs
+* Increase scalability
+* Improve availability and reliability
+* Enhance security
+* Eliminate hardware maintenance
+* Pay only for what you use
+
+## Common Migration Services
+
+### AWS Application Migration Service (MGN)
+
+* Migrates physical, virtual, and cloud servers to AWS
+* Supports lift-and-shift migration
+* Minimizes downtime
+
+### AWS Database Migration Service (DMS)
+
+* Migrates databases with minimal downtime
+* Supports homogeneous and heterogeneous migrations
+* Keeps source database running during migration
+
+### AWS Application Discovery Service
+
+* Discovers on-premises servers
+* Collects configuration and dependency information
+* Helps plan migrations
+
+### AWS DataSync
+
+* Transfers large amounts of data online
+* Faster than manual copying
+* Supports on-premises to AWS transfers
+
+### AWS Storage Gateway
+
+* Connects on-premises storage with AWS storage
+* Hybrid cloud storage solution
+
+### AWS Snow Family
+
+* Offline data transfer
+* Used when internet bandwidth is limited
+* Includes Snowcone, Snowball Edge, and Snowmobile
+
+## The 7 Migration Strategies (7 Rs)
+
+### Rehost
+
+* Lift and Shift
+* Move applications without changing them
+
+### Replatform
+
+* Make small optimizations during migration
+* No major code changes
+
+### Repurchase
+
+* Replace the existing application with a SaaS product
+
+### Refactor (Re-architect)
+
+* Modify the application to use cloud-native services
+
+### Relocate
+
+* Move VMware workloads to AWS without redesigning
+
+### Retain
+
+* Keep some applications on-premises
+
+### Retire
+
+* Remove applications that are no longer needed
+
+## Migration Flow
+
+On-Premises
+↓
+Discovery
+↓
+Choose Migration Strategy (7 Rs)
+↓
+Use Migration Services
+↓
+AWS Cloud
+
+## Common Use Cases
+
+* Data center migration
+* Database migration
+* Server migration
+* Hybrid cloud adoption
+* Disaster recovery
+
+## Benefits
+
+* Lower operational costs
+* Improved scalability
+* Higher availability
+* Better disaster recovery
+* Faster innovation
+
+## Important AWS Migration Services
+
+| Requirement           | AWS Service                             |
+| --------------------- | --------------------------------------- |
+| Migrate servers       | AWS Application Migration Service (MGN) |
+| Migrate databases     | AWS Database Migration Service (DMS)    |
+| Discover applications | AWS Application Discovery Service       |
+| Online data transfer  | AWS DataSync                            |
+| Hybrid storage        | AWS Storage Gateway                     |
+| Offline data transfer | AWS Snow Family                         |
+
+## Exam Tips
+
+Choose **AWS Application Migration Service (MGN)** when:
+
+* Migrating servers
+* Lift-and-shift migrations
+* Minimal downtime
+
+Choose **AWS DMS** when:
+
+* Migrating databases
+* Oracle, MySQL, PostgreSQL, SQL Server migrations
+* Minimal downtime
+
+Choose **AWS DataSync** when:
+
+* Online file transfer
+* Large-scale data synchronization
+
+Choose **AWS Snow Family** when:
+
+* Offline migration
+* Slow or unreliable internet
+* Very large datasets
+
+Choose **AWS Storage Gateway** when:
+
+* Hybrid storage
+* On-premises systems need AWS storage
+
+## Summary
+
+AWS provides multiple migration services to move servers, databases, applications, and data from on-premises environments to AWS. Selecting the correct service depends on whether you are migrating servers, databases, online data, offline data, or building a hybrid cloud solution.
