@@ -1362,3 +1362,226 @@ Choose **AWS Storage Gateway** when:
 ## Summary
 
 AWS provides multiple migration services to move servers, databases, applications, and data from on-premises environments to AWS. Selecting the correct service depends on whether you are migrating servers, databases, online data, offline data, or building a hybrid cloud solution.
+
+
+# Day 22 – AWS Organizations
+
+## Overview
+AWS Organizations is a service that helps you centrally manage and govern multiple AWS accounts from a single management account.
+
+---
+
+## Why Use AWS Organizations?
+
+- Centralized account management
+- Consolidated billing
+- Volume discounts
+- Centralized security policies
+- Centralized access control
+- Simplified compliance and governance
+
+---
+
+## Core Components
+
+### Management Account
+- The primary AWS account
+- Creates and manages the organization
+- Pays the consolidated bill
+
+### Member Accounts
+- Individual AWS accounts
+- Belong to the organization
+- Can be grouped into Organizational Units (OUs)
+
+### Organizational Units (OUs)
+- Logical groups of AWS accounts
+- Apply policies to multiple accounts
+
+Example:
+
+Company
+
+├── Security OU
+
+├── Development OU
+
+├── Production OU
+
+└── Testing OU
+
+---
+
+## Service Control Policies (SCPs)
+
+SCPs define the maximum permissions available for AWS accounts within an organization.
+
+Example:
+
+Security OU
+
+↓
+
+Deny EC2 Terminate
+
+↓
+
+All accounts inside Security OU cannot terminate EC2 instances.
+
+Important:
+- SCPs never grant permissions.
+- SCPs only limit permissions.
+- IAM policies are still required.
+
+---
+
+## Consolidated Billing
+
+Benefits:
+
+- Single monthly bill
+- Shared Reserved Instance discounts
+- Shared Savings Plans
+- Volume pricing discounts
+- Easier cost tracking
+
+Example:
+
+Without Organizations
+
+Account A → Separate Bill
+
+Account B → Separate Bill
+
+Account C → Separate Bill
+
+With Organizations
+
+Management Account
+
+↓
+
+One Combined Bill
+
+---
+
+## Tag Policies
+
+Maintain consistent resource tagging.
+
+Example:
+
+Correct
+
+Environment=Production
+
+Incorrect
+
+env=Prod
+
+Tag policies help standardize tags across accounts.
+
+---
+
+## Backup Policies
+
+Centralized backup management.
+
+Example:
+
+Daily backup
+
+↓
+
+Every account automatically follows the backup policy.
+
+---
+
+## AI Services Opt-Out Policies
+
+Control whether AWS AI services can use customer content for service improvements where applicable.
+
+---
+
+## Common Use Cases
+
+- Large enterprises
+- Multiple departments
+- Separate development and production accounts
+- Centralized billing
+- Governance
+- Compliance
+
+---
+
+## AWS Organizations vs IAM
+
+| AWS Organizations | IAM |
+|-------------------|-----|
+| Manage multiple AWS accounts | Manage users and permissions within one account |
+| Centralized governance | Identity and access management |
+| Consolidated billing | User authentication and authorization |
+
+---
+
+## AWS Organizations vs AWS Identity Center
+
+| AWS Organizations | AWS Identity Center |
+|-------------------|--------------------|
+| Manage AWS accounts | Single Sign-On (SSO) for users |
+| Billing & governance | User login management |
+| Service Control Policies | Permission sets |
+
+---
+
+## Important Features
+
+- Consolidated Billing
+- Organizational Units (OUs)
+- Service Control Policies (SCPs)
+- Centralized Management
+- Shared Discounts
+- Policy Management
+
+---
+
+## Exam Tips
+
+Choose AWS Organizations when the question mentions:
+
+- Multiple AWS accounts
+- Central billing
+- Governance
+- Organizational Units
+- SCPs
+- Shared discounts
+- Centralized account management
+
+---
+
+## Remember
+
+Management Account
+
+↓
+
+AWS Organizations
+
+↓
+
+Organizational Units
+
+↓
+
+Member Accounts
+
+↓
+
+IAM Users/Roles
+
+---
+
+## Summary
+
+AWS Organizations enables centralized management of multiple AWS accounts by providing consolidated billing, governance through Service Control Policies (SCPs), Organizational Units (OUs), and policy-based account management.
+
