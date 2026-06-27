@@ -25,7 +25,7 @@
 * [x] AWS Secrets Manager
 * [x] AWS ACM
 * [ ] Amazon ECS
-* [ ] AWS Organizations
+* [x] AWS Organizations
 * [ ] AWS Identity Center
 
 ## 🟡 Tier 3 — Good to Know
