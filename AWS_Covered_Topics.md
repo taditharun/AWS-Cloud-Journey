@@ -53,7 +53,7 @@
 * [ ] Amazon Inspector
 * [ ] Amazon Macie
 * [ ] AWS WAF
-* [ ] AWS Shield
+* [x] AWS Shield
 * [ ] AWS Shield Advanced
 * [ ] AWS Firewall Manager
 * [ ] IAM Access Analyzer
