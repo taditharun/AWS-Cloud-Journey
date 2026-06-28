@@ -1585,3 +1585,223 @@ IAM Users/Roles
 
 AWS Organizations enables centralized management of multiple AWS accounts by providing consolidated billing, governance through Service Control Policies (SCPs), Organizational Units (OUs), and policy-based account management.
 
+# Day 23 – AWS Shield
+
+## Overview
+
+AWS Shield is a managed Distributed Denial of Service (DDoS) protection service that safeguards applications running on AWS.
+
+A DDoS attack attempts to overwhelm a website or application with massive amounts of traffic, making it unavailable to legitimate users.
+
+---
+
+## What is a DDoS Attack?
+
+Normal Traffic
+
+Users
+
+↓
+
+Website
+
+↓
+
+Works Normally
+
+Attack
+
+Millions of Fake Requests
+
+↓
+
+Website
+
+↓
+
+Server Overloaded
+
+↓
+
+Real Users Cannot Access
+
+---
+
+## Types of AWS Shield
+
+### AWS Shield Standard
+
+- Free for all AWS customers
+- Automatically enabled
+- Protects against common network and transport layer (Layer 3 & Layer 4) DDoS attacks
+
+Examples:
+- SYN Flood
+- UDP Flood
+- Reflection attacks
+
+---
+
+### AWS Shield Advanced
+
+Paid service with additional protections.
+
+Features:
+- Advanced DDoS detection
+- 24×7 AWS DDoS Response Team (DRT)
+- Cost protection for scaling during attacks
+- Detailed attack diagnostics
+- Protection for critical production applications
+
+---
+
+## AWS Services Protected
+
+- Amazon CloudFront
+- Elastic Load Balancer (ELB)
+- Amazon Route 53
+- AWS Global Accelerator
+- Elastic IP addresses
+
+---
+
+## Shield Standard vs Shield Advanced
+
+| Feature | Shield Standard | Shield Advanced |
+|----------|-----------------|-----------------|
+| Cost | Free | Paid |
+| DDoS Protection | Basic | Advanced |
+| Layer 3 & 4 Protection | ✅ | ✅ |
+| DDoS Response Team (DRT) | ❌ | ✅ |
+| Cost Protection | ❌ | ✅ |
+| Detailed Attack Reports | ❌ | ✅ |
+
+---
+
+## How AWS Shield Works
+
+Internet
+
+↓
+
+Millions of Requests
+
+↓
+
+AWS Shield
+
+↓
+
+Blocks Malicious Traffic
+
+↓
+
+CloudFront / ELB
+
+↓
+
+EC2
+
+↓
+
+Website Available
+
+---
+
+## Real-Life Example
+
+Suppose your e-commerce website receives:
+
+Normal Day
+
+5,000 users
+
+Black Friday Attack
+
+10 million fake requests
+
+Without Shield
+
+↓
+
+Website crashes
+
+With Shield
+
+↓
+
+Attack traffic blocked
+
+↓
+
+Real customers continue shopping
+
+---
+
+## AWS Shield vs AWS WAF
+
+| AWS Shield | AWS WAF |
+|-------------|----------|
+| Protects against DDoS attacks | Protects against web application attacks |
+| Network & Transport Layer | Application Layer (HTTP/HTTPS) |
+| Blocks floods | Blocks SQL Injection, XSS, bad IPs |
+
+Example:
+
+Shield blocks:
+
+- SYN Flood
+- UDP Flood
+
+WAF blocks:
+
+- SQL Injection
+- Cross-Site Scripting (XSS)
+- Malicious HTTP requests
+
+---
+
+## AWS Shield vs AWS Firewall Manager
+
+| AWS Shield | AWS Firewall Manager |
+|-------------|----------------------|
+| Provides DDoS protection | Centrally manages firewall and security policies |
+| Protects resources | Manages AWS WAF, Shield, Security Groups across accounts |
+
+---
+
+## Common Use Cases
+
+- Banking applications
+- Government websites
+- E-commerce websites
+- APIs
+- Gaming platforms
+- Healthcare portals
+
+---
+
+## Exam Tips
+
+Choose AWS Shield when the question mentions:
+
+- DDoS attack
+- Flood attack
+- Website unavailable
+- Millions of requests
+- Network attack
+- Availability protection
+
+Choose AWS Shield Advanced when the question mentions:
+
+- Enterprise
+- Mission-critical applications
+- DDoS Response Team (DRT)
+- Cost protection
+- Advanced reporting
+
+---
+
+## Summary
+
+AWS Shield protects AWS applications from Distributed Denial of Service (DDoS) attacks. Shield Standard provides free automatic protection against common network attacks, while Shield Advanced offers enhanced protection, expert response support, and additional features for critical workloads.
