@@ -1805,3 +1805,258 @@ Choose AWS Shield Advanced when the question mentions:
 ## Summary
 
 AWS Shield protects AWS applications from Distributed Denial of Service (DDoS) attacks. Shield Standard provides free automatic protection against common network attacks, while Shield Advanced offers enhanced protection, expert response support, and additional features for critical workloads.
+
+
+
+# Day 23 – Amazon Inspector
+
+## Overview
+
+Amazon Inspector is an automated security assessment service that continuously scans AWS resources for security vulnerabilities and unintended network exposure.
+
+It helps identify:
+- Software vulnerabilities (CVEs)
+- Missing security patches
+- Unintended network exposure
+- Container image vulnerabilities
+
+---
+
+## Why Use Amazon Inspector?
+
+- Automatically scans EC2 instances
+- Scans Amazon ECR container images
+- Scans AWS Lambda functions
+- Detects software vulnerabilities
+- Provides security findings and recommendations
+
+---
+
+## What Can Amazon Inspector Scan?
+
+### Amazon EC2
+
+Checks:
+- Missing security patches
+- Known software vulnerabilities (CVEs)
+- Unintended network exposure
+
+Example:
+
+EC2
+
+↓
+
+Ubuntu Server
+
+↓
+
+Apache Vulnerability Found
+
+↓
+
+Inspector Generates Finding
+
+---
+
+### Amazon ECR
+
+Scans Docker container images.
+
+Example:
+
+Docker Image
+
+↓
+
+Amazon ECR
+
+↓
+
+Inspector Scan
+
+↓
+
+Critical Vulnerability Found
+
+---
+
+### AWS Lambda
+
+Scans Lambda function packages.
+
+Checks:
+- Vulnerable libraries
+- Known security issues
+
+---
+
+## How Amazon Inspector Works
+
+EC2 / ECR / Lambda
+
+↓
+
+Amazon Inspector
+
+↓
+
+Security Scan
+
+↓
+
+Find Vulnerabilities
+
+↓
+
+Generate Findings
+
+↓
+
+Security Hub / Email / Console
+
+---
+
+## Types of Findings
+
+- Critical
+- High
+- Medium
+- Low
+- Informational
+
+Example:
+
+Critical
+
+↓
+
+OpenSSL Vulnerability
+
+↓
+
+Patch Immediately
+
+---
+
+## Real-Life Example
+
+Company has:
+
+100 EC2 Instances
+
+↓
+
+Amazon Inspector scans automatically
+
+↓
+
+Instance 42 has outdated OpenSSL
+
+↓
+
+Inspector reports:
+
+High Severity
+
+↓
+
+Administrator patches the server
+
+---
+
+## Benefits
+
+- Continuous scanning
+- Automated vulnerability detection
+- Prioritized findings
+- Easy integration with Security Hub
+- Improves security posture
+
+---
+
+## Amazon Inspector vs Amazon GuardDuty
+
+| Amazon Inspector | Amazon GuardDuty |
+|------------------|------------------|
+| Finds vulnerabilities | Detects threats |
+| Scans EC2, ECR, Lambda | Monitors AWS accounts and workloads |
+| Missing patches | Suspicious activity |
+| CVEs | Malware, crypto mining, credential compromise |
+
+Example:
+
+Inspector
+
+↓
+
+"Your server has an outdated package."
+
+GuardDuty
+
+↓
+
+"Someone is trying to hack your server."
+
+---
+
+## Amazon Inspector vs Amazon Macie
+
+| Amazon Inspector | Amazon Macie |
+|------------------|--------------|
+| Vulnerability scanning | Sensitive data discovery |
+| EC2, Lambda, ECR | Amazon S3 |
+| Security weaknesses | PII detection |
+
+---
+
+## Amazon Inspector vs AWS Config
+
+| Amazon Inspector | AWS Config |
+|------------------|-----------|
+| Finds vulnerabilities | Checks configuration compliance |
+| Security assessment | Configuration tracking |
+
+Example:
+
+Inspector
+
+↓
+
+EC2 has outdated software.
+
+Config
+
+↓
+
+S3 bucket became public.
+
+---
+
+## Common Use Cases
+
+- Patch management
+- Vulnerability management
+- Compliance
+- Security audits
+- Continuous security monitoring
+
+---
+
+## Exam Tips
+
+Choose Amazon Inspector when the question mentions:
+
+- Vulnerability scanning
+- Missing patches
+- CVEs
+- Security assessment
+- EC2 security scan
+- ECR image scan
+- Lambda package scan
+
+---
+
+## Summary
+
+Amazon Inspector automatically scans EC2 instances, Amazon ECR container images, and AWS Lambda functions for software vulnerabilities, missing patches, and unintended network exposure. It helps organizations identify and remediate security risks before attackers can exploit them.
