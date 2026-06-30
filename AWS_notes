@@ -2060,3 +2060,271 @@ Choose Amazon Inspector when the question mentions:
 ## Summary
 
 Amazon Inspector automatically scans EC2 instances, Amazon ECR container images, and AWS Lambda functions for software vulnerabilities, missing patches, and unintended network exposure. It helps organizations identify and remediate security risks before attackers can exploit them.
+
+
+
+# Day 24 – Amazon GuardDuty
+
+## Overview
+
+Amazon GuardDuty is an intelligent threat detection service that continuously monitors your AWS accounts, workloads, and data for malicious or unauthorized activity.
+
+It uses:
+- Machine Learning
+- Threat Intelligence
+- AWS CloudTrail Events
+- VPC Flow Logs
+- DNS Logs
+- Kubernetes Audit Logs (EKS)
+- Runtime Monitoring (optional)
+
+GuardDuty automatically generates security findings when suspicious activity is detected.
+
+---
+
+# Why Use GuardDuty?
+
+- No software to install
+- Continuous monitoring
+- Intelligent threat detection
+- Detects compromised AWS accounts
+- Detects malware activity
+- Detects cryptocurrency mining
+- Detects unusual API calls
+
+---
+
+# How GuardDuty Works
+
+CloudTrail Logs
+        │
+VPC Flow Logs
+        │
+DNS Logs
+        │
+EKS Audit Logs
+        │
+───────────────
+        │
+Amazon GuardDuty
+        │
+Machine Learning
+        │
+Threat Intelligence
+        │
+Security Findings
+        │
+AWS Console / Security Hub / EventBridge
+
+---
+
+# What Does GuardDuty Detect?
+
+## 1. Compromised IAM Credentials
+
+Example:
+
+Someone from another country suddenly logs into your AWS account.
+
+↓
+
+GuardDuty detects:
+
+"Credential Compromise"
+
+---
+
+## 2. Cryptocurrency Mining
+
+Example:
+
+Your EC2 instance suddenly starts mining Bitcoin.
+
+↓
+
+GuardDuty reports:
+
+"CryptoCurrency:EC2"
+
+---
+
+## 3. Malware Activity
+
+Example:
+
+EC2 downloads malicious software.
+
+↓
+
+GuardDuty creates:
+
+High Severity Finding
+
+---
+
+## 4. Unusual API Calls
+
+Example:
+
+An attacker suddenly deletes IAM users or creates unusual access keys.
+
+↓
+
+GuardDuty alerts you.
+
+---
+
+## 5. Port Scanning
+
+Example:
+
+Someone scans your EC2 instance on thousands of ports.
+
+↓
+
+GuardDuty detects reconnaissance activity.
+
+---
+
+## 6. Communication with Malicious IPs
+
+Example:
+
+EC2 communicates with a known hacker server.
+
+↓
+
+GuardDuty detects malicious communication.
+
+---
+
+# Real-Life Example
+
+Company Website
+
+↓
+
+EC2 Instance
+
+↓
+
+Attacker steals IAM Access Key
+
+↓
+
+Uses access key from another country
+
+↓
+
+GuardDuty detects
+
+↓
+
+High Severity Finding
+
+↓
+
+Security Team Investigates
+
+---
+
+# Data Sources
+
+- AWS CloudTrail
+- VPC Flow Logs
+- DNS Logs
+- EKS Audit Logs
+- Runtime Monitoring
+
+GuardDuty analyzes these logs automatically.
+
+---
+
+# Amazon GuardDuty vs Amazon Inspector
+
+| Amazon GuardDuty | Amazon Inspector |
+|------------------|------------------|
+| Detects threats | Finds vulnerabilities |
+| Detects attacks | Detects missing patches |
+| Detects compromised credentials | Detects outdated software |
+| Continuous monitoring | Vulnerability scanning |
+
+Example
+
+GuardDuty:
+
+"Someone hacked your server."
+
+Inspector:
+
+"Your server needs security updates."
+
+---
+
+# GuardDuty vs Macie
+
+| GuardDuty | Macie |
+|------------|--------|
+| Detects threats | Finds sensitive data |
+| CloudTrail analysis | Amazon S3 analysis |
+| Detects attackers | Detects PII |
+
+---
+
+# GuardDuty vs AWS Shield
+
+| GuardDuty | AWS Shield |
+|------------|-----------|
+| Detects suspicious activity | Protects against DDoS |
+| Threat Detection | Attack Mitigation |
+
+---
+
+# GuardDuty vs AWS WAF
+
+| GuardDuty | AWS WAF |
+|------------|---------|
+| Detects threats | Blocks malicious web requests |
+| Monitoring | Prevention |
+
+---
+
+# Common Use Cases
+
+- Security monitoring
+- Threat detection
+- Malware detection
+- Compromised account detection
+- Compliance
+- SOC operations
+
+---
+
+# AWS Services Integrated
+
+- AWS Security Hub
+- Amazon EventBridge
+- AWS Lambda
+- Amazon SNS
+- CloudWatch
+
+---
+
+# Exam Tips
+
+Choose Amazon GuardDuty when the question mentions:
+
+- Suspicious activity
+- Threat detection
+- Compromised credentials
+- Malware
+- Crypto mining
+- Unusual API calls
+- Continuous monitoring
+- Threat Intelligence
+
+---
+
+# Summary
+
+Amazon GuardDuty is an intelligent threat detection service that continuously analyzes AWS logs using machine learning and threat intelligence to detect compromised accounts, malware, suspicious API activity, cryptocurrency mining, and other security threats.
