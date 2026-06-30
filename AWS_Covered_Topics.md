@@ -49,7 +49,7 @@
 
 * [ ] AWS Organizations
 * [ ] AWS Identity Center
-* [ ] Amazon GuardDuty
+* [x] Amazon GuardDuty
 * [x] Amazon Inspector
 * [ ] Amazon Macie
 * [ ] AWS WAF
