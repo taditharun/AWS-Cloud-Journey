@@ -2328,3 +2328,174 @@ Choose Amazon GuardDuty when the question mentions:
 # Summary
 
 Amazon GuardDuty is an intelligent threat detection service that continuously analyzes AWS logs using machine learning and threat intelligence to detect compromised accounts, malware, suspicious API activity, cryptocurrency mining, and other security threats.
+
+
+# Day 25 – AWS Cost Explorer
+
+## Overview
+
+AWS Cost Explorer is a cost analysis and visualization service that helps you understand, monitor, and forecast your AWS spending over time.
+
+It provides interactive graphs, reports, and cost forecasts.
+
+---
+
+# Why Use AWS Cost Explorer?
+
+- Analyze AWS spending
+- View daily and monthly costs
+- Forecast future costs
+- Identify highest-cost services
+- Filter costs by service, account, Region, or tags
+
+---
+
+# How AWS Cost Explorer Works
+
+AWS Services
+
+↓
+
+Collect Usage & Billing Data
+
+↓
+
+AWS Cost Explorer
+
+↓
+
+Charts & Reports
+
+↓
+
+Cost Analysis
+
+↓
+
+Forecast Future Spending
+
+---
+
+# Key Features
+
+## 1. Cost Visualization
+
+Shows costs in graphs.
+
+Example:
+
+EC2        → $120
+
+S3         → $30
+
+Lambda     → $12
+
+RDS        → $75
+
+---
+
+## 2. Cost Forecasting
+
+Predicts future AWS spending.
+
+Example:
+
+Current Month
+
+↓
+
+Spent: $320
+
+↓
+
+Forecast
+
+↓
+
+Expected Total: $450
+
+---
+
+## 3. Filter Costs
+
+You can filter by:
+
+- AWS Service
+- Region
+- Linked Account
+- Tags
+- Usage Type
+
+Example:
+
+Show only
+
+↓
+
+Amazon EC2
+
+↓
+
+Last 30 Days
+
+---
+
+## 4. Find Cost Trends
+
+Example:
+
+January → $100
+
+February → $130
+
+March → $180
+
+↓
+
+Identify increasing costs.
+
+---
+
+## 5. Group Costs
+
+Group by:
+
+- Service
+- Region
+- Account
+- Tag
+- Instance Type
+
+Example:
+
+Service
+
+↓
+
+EC2
+
+S3
+
+Lambda
+
+RDS
+
+---
+
+# Real-Life Example
+
+Company receives an AWS bill:
+
+$2,000
+
+Need to know:
+
+Which service spent the most?
+
+↓
+
+AWS Cost Explorer
+
+↓
+
+EC2 = $1,200
