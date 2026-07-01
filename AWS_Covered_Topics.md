@@ -60,7 +60,7 @@
 
 ## 🔵 Tier 6 — Cost Management
 
-* [ ] AWS Cost Explorer
+* [x] AWS Cost Explorer
 * [ ] AWS Budgets
 * [ ] AWS Billing Dashboard
 * [ ] AWS Trusted Advisor
