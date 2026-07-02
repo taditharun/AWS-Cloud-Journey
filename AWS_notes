@@ -2499,3 +2499,335 @@ AWS Cost Explorer
 ↓
 
 EC2 = $1,200
+
+
+# Day 26 – AWS Budgets
+
+## Overview
+
+AWS Budgets is a cost management service that helps you set custom budgets and receive alerts when your AWS costs or usage exceed (or are forecasted to exceed) your defined limits.
+
+It helps prevent unexpected AWS bills.
+
+---
+
+# Why Use AWS Budgets?
+
+- Set monthly or yearly budgets
+- Receive email alerts
+- Monitor AWS costs
+- Monitor service usage
+- Track Reserved Instance and Savings Plans utilization
+- Forecast future spending
+
+---
+
+# How AWS Budgets Works
+
+AWS Usage
+
+↓
+
+AWS Billing Data
+
+↓
+
+AWS Budgets
+
+↓
+
+Compare with Budget
+
+↓
+
+Threshold Reached?
+
+↓
+
+Email / SNS Alert
+
+---
+
+# Example
+
+Monthly Budget
+
+↓
+
+$50
+
+Current Spending
+
+↓
+
+$20 → No Alert
+
+↓
+
+$40 → 80% Alert
+
+↓
+
+$50 → Budget Reached
+
+↓
+
+$55 → Budget Exceeded Alert
+
+---
+
+# Types of Budgets
+
+## 1. Cost Budget
+
+Monitors:
+
+- Monthly AWS spending
+- Daily spending
+- Quarterly spending
+- Yearly spending
+
+Example:
+
+Budget = $100/month
+
+Current Cost = $95
+
+↓
+
+Alert at 80%, 90%, or 100%
+
+---
+
+## 2. Usage Budget
+
+Monitors AWS service usage instead of cost.
+
+Examples:
+
+- EC2 Hours
+- S3 Storage (GB)
+- Lambda Invocations
+
+Example:
+
+EC2 Budget
+
+↓
+
+100 Hours
+
+↓
+
+Current Usage
+
+↓
+
+95 Hours
+
+↓
+
+Alert
+
+---
+
+## 3. Reserved Instance (RI) Budget
+
+Tracks:
+
+- Reserved Instance utilization
+- Reserved Instance coverage
+
+Helps maximize savings.
+
+---
+
+## 4. Savings Plans Budget
+
+Tracks:
+
+- Savings Plans utilization
+- Savings Plans coverage
+
+Ensures purchased Savings Plans are fully utilized.
+
+---
+
+# Budget Alerts
+
+Alerts can be sent through:
+
+- Email
+- Amazon SNS
+
+Example
+
+Budget
+
+↓
+
+90%
+
+↓
+
+Email
+
+Budget Alert
+
+---
+
+# Budget Thresholds
+
+Common thresholds:
+
+- 50%
+- 80%
+- 90%
+- 100%
+
+Example
+
+Budget = $100
+
+80%
+
+↓
+
+Spent = $80
+
+↓
+
+Email Alert
+
+---
+
+# Budget Actions
+
+AWS Budgets can automatically take actions.
+
+Examples:
+
+- Stop EC2 instances
+- Apply IAM policies
+- Restrict new resource creation
+
+Example
+
+Budget
+
+↓
+
+Exceeded
+
+↓
+
+Stop EC2
+
+↓
+
+Reduce Costs
+
+---
+
+# Forecasting
+
+AWS predicts future spending.
+
+Example
+
+Today
+
+↓
+
+Spent = $60
+
+↓
+
+Forecast = $120
+
+↓
+
+Budget = $100
+
+↓
+
+Forecast Alert
+
+---
+
+# Real-Life Example
+
+Student AWS Account
+
+Monthly Budget
+
+↓
+
+$10
+
+Current Cost
+
+↓
+
+$8
+
+↓
+
+80% Alert
+
+↓
+
+Take Action Before Exceeding Budget
+
+---
+
+# AWS Budgets vs AWS Cost Explorer
+
+| AWS Budgets | AWS Cost Explorer |
+|--------------|------------------|
+| Set budgets | Analyze spending |
+| Send alerts | View reports |
+| Forecast budget usage | Forecast costs |
+| Budget actions | Cost visualization |
+
+---
+
+# AWS Budgets vs CloudWatch Billing Alarm
+
+| AWS Budgets | CloudWatch Billing Alarm |
+|--------------|-------------------------|
+| Flexible budgets | Billing metric alarm |
+| Multiple thresholds | Single alarm threshold |
+| Forecast alerts | Actual billing alerts |
+| Budget actions | SNS notifications |
+
+---
+
+# Common Use Cases
+
+- Personal AWS accounts
+- Students using AWS Free Tier
+- Startups
+- Enterprises
+- Cost control
+- Budget monitoring
+
+---
+
+# Exam Tips
+
+Choose AWS Budgets when the question mentions:
+
+- Budget limit
+- Spending threshold
+- Email alert
+- Forecasted spending
+- Monthly budget
+- Prevent overspending
+
+---
+
+# Summary
+
+AWS Budgets allows you to create custom cost and usage budgets, receive alerts when actual or forecasted spending reaches defined thresholds, and optionally automate actions to help control AWS costs.
+
