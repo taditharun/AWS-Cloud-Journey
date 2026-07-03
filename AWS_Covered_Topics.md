@@ -77,7 +77,7 @@
 
 ## 🟠 Tier 8 — Containers & DevOps
 
-* [ ] Amazon ECS
+* [x] Amazon ECS
 * [ ] AWS CloudFormation
 * [ ] AWS Elastic Beanstalk
 * [ ] AWS Step Functions
