@@ -2831,3 +2831,430 @@ Choose AWS Budgets when the question mentions:
 
 AWS Budgets allows you to create custom cost and usage budgets, receive alerts when actual or forecasted spending reaches defined thresholds, and optionally automate actions to help control AWS costs.
 
+# Day 27 – Amazon Elastic Container Service (ECS)
+
+## Overview
+
+Amazon ECS (Elastic Container Service) is a fully managed container orchestration service that allows you to run, stop, and manage Docker containers on AWS.
+
+It eliminates the need to manage your own container orchestration platform.
+
+---
+
+# What is a Container?
+
+A container packages:
+
+- Application
+- Libraries
+- Dependencies
+- Runtime
+
+Everything required to run the application.
+
+Example:
+
+My App
+
+↓
+
+Docker Container
+
+↓
+
+Runs anywhere
+
+---
+
+# Why Containers?
+
+Without Containers
+
+Developer PC
+
+↓
+
+Works
+
+↓
+
+Production
+
+↓
+
+Fails
+
+Because software versions differ.
+
+With Containers
+
+Developer
+
+↓
+
+Docker Container
+
+↓
+
+Testing
+
+↓
+
+Production
+
+↓
+
+Works the same everywhere
+
+---
+
+# What is Amazon ECS?
+
+Amazon ECS manages containers.
+
+Instead of managing servers manually:
+
+You
+
+↓
+
+Upload Docker Image
+
+↓
+
+Amazon ECS
+
+↓
+
+Runs Containers
+
+↓
+
+Scales Automatically
+
+---
+
+# ECS Components
+
+## 1. Cluster
+
+A logical group of resources where containers run.
+
+Example:
+
+ECS Cluster
+
+├── Task 1
+
+├── Task 2
+
+└── Task 3
+
+---
+
+## 2. Task Definition
+
+A blueprint for your application.
+
+Contains:
+
+- Docker image
+- CPU
+- Memory
+- Ports
+- Environment variables
+
+Example
+
+Docker Image
+
+↓
+
+nginx:latest
+
+CPU
+
+↓
+
+512
+
+Memory
+
+↓
+
+1024 MB
+
+---
+
+## 3. Task
+
+A running instance of a Task Definition.
+
+Example
+
+Task Definition
+
+↓
+
+Launch
+
+↓
+
+Running Task
+
+---
+
+## 4. Service
+
+Keeps a desired number of tasks running.
+
+Example
+
+Desired Tasks = 3
+
+↓
+
+One Task Stops
+
+↓
+
+ECS Automatically Starts Another
+
+---
+
+# ECS Launch Types
+
+## 1. AWS Fargate
+
+Serverless containers.
+
+AWS manages:
+
+- EC2 instances
+- Operating System
+- Scaling
+
+You manage:
+
+- Containers
+
+Best for:
+
+- Beginners
+- Small teams
+- No infrastructure management
+
+---
+
+## 2. EC2 Launch Type
+
+Containers run on EC2 instances.
+
+You manage:
+
+- EC2
+- Operating System
+- Scaling
+
+AWS manages:
+
+- ECS control plane
+
+Best for:
+
+- Custom environments
+- Full control
+
+---
+
+# ECS Architecture
+
+Users
+
+↓
+
+Application Load Balancer
+
+↓
+
+Amazon ECS Service
+
+↓
+
+Task 1
+
+Task 2
+
+Task 3
+
+↓
+
+Docker Containers
+
+---
+
+# Docker Image Flow
+
+Developer
+
+↓
+
+Docker Build
+
+↓
+
+Amazon ECR
+
+↓
+
+Amazon ECS
+
+↓
+
+Running Containers
+
+---
+
+# ECS + ECR
+
+Amazon ECR stores container images.
+
+Amazon ECS runs those images.
+
+Example
+
+Docker Image
+
+↓
+
+Amazon ECR
+
+↓
+
+Amazon ECS
+
+↓
+
+Application Running
+
+---
+
+# ECS Auto Scaling
+
+Traffic Increases
+
+↓
+
+Application Load Balancer
+
+↓
+
+ECS Service
+
+↓
+
+Launch More Tasks
+
+↓
+
+Traffic Decreases
+
+↓
+
+Stop Extra Tasks
+
+---
+
+# ECS vs EKS
+
+| ECS | EKS |
+|------|------|
+| AWS proprietary container orchestration | Managed Kubernetes |
+| Easier to learn | More complex |
+| Best for AWS-native workloads | Best for Kubernetes portability |
+| AWS manages control plane | AWS manages Kubernetes control plane |
+
+---
+
+# ECS vs EC2
+
+| ECS | EC2 |
+|------|------|
+| Runs containers | Runs virtual machines |
+| Container orchestration | Virtual server |
+| Can use Fargate | You manage OS |
+
+---
+
+# ECS vs Lambda
+
+| ECS | Lambda |
+|------|---------|
+| Long-running containers | Event-driven functions |
+| Supports Docker containers | Short-lived execution |
+| Good for web applications | Good for event processing |
+
+---
+
+# Common Use Cases
+
+- Web applications
+- Microservices
+- REST APIs
+- Background workers
+- Batch processing
+- Containerized applications
+
+---
+
+# Benefits
+
+- Fully managed
+- High availability
+- Auto Scaling
+- Integrated with ALB
+- Integrated with IAM
+- Integrated with CloudWatch
+- Supports Fargate
+
+---
+
+# AWS Services Used with ECS
+
+- Amazon ECR
+- Application Load Balancer
+- IAM
+- CloudWatch
+- Auto Scaling
+- AWS Fargate
+
+---
+
+# Exam Tips
+
+Choose Amazon ECS when the question mentions:
+
+- Docker containers
+- Container orchestration
+- Run containers
+- Docker images
+- Microservices
+- AWS-managed containers
+
+Choose AWS Fargate when:
+
+- No server management
+- Serverless containers
+- Don't want to manage EC2
+
+Choose EC2 Launch Type when:
+
+- Need full control over servers
+- Custom AMIs
+- Custom networking
+
+---
+
+# Summary
+
+Amazon ECS is AWS's fully managed container orchestration service for running Docker containers. It supports two launch types: AWS Fargate for serverless containers and EC2 for customers who need full control over the underlying infrastructure.
