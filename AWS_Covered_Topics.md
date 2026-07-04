@@ -68,7 +68,7 @@
 
 ## 🟡 Tier 7 — Migration Services
 
-* [ ] AWS Storage Gateway
+* [x] AWS Storage Gateway
 * [ ] AWS Database Migration Service (DMS)
 * [ ] AWS Schema Conversion Tool (SCT)
 * [ ] AWS DataSync
