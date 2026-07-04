@@ -3258,3 +3258,309 @@ Choose EC2 Launch Type when:
 # Summary
 
 Amazon ECS is AWS's fully managed container orchestration service for running Docker containers. It supports two launch types: AWS Fargate for serverless containers and EC2 for customers who need full control over the underlying infrastructure.
+
+
+# Day 28 – AWS Storage Gateway
+
+## Overview
+
+AWS Storage Gateway is a hybrid cloud storage service that connects on-premises environments with AWS storage services.
+
+It allows organizations to store and access data seamlessly between local infrastructure and AWS without changing existing applications.
+
+---
+
+# Why Use AWS Storage Gateway?
+
+- Extend on-premises storage to AWS
+- Backup data to AWS
+- Reduce local storage costs
+- Enable hybrid cloud storage
+- Minimize application changes
+- Improve disaster recovery
+
+---
+
+# Hybrid Storage Architecture
+
+On-Premises Servers
+        │
+        ▼
+AWS Storage Gateway
+        │
+────────┼────────
+        │
+Amazon S3
+Amazon EBS Snapshots
+Amazon FSx (depending on gateway type)
+
+---
+
+# Types of Storage Gateway
+
+## 1. File Gateway
+
+Provides file-based access.
+
+Protocols:
+
+- NFS
+- SMB
+
+Stores files as objects in Amazon S3.
+
+Example:
+
+Office File Server
+
+↓
+
+File Gateway
+
+↓
+
+Amazon S3
+
+Best for:
+
+- File sharing
+- Backups
+- Media storage
+- Home directories
+
+---
+
+## 2. Volume Gateway
+
+Provides block storage.
+
+Appears as an iSCSI disk to servers.
+
+Two modes:
+
+### Cached Volumes
+
+Primary data stored in AWS.
+
+Frequently accessed data cached locally.
+
+Flow:
+
+Server
+
+↓
+
+Local Cache
+
+↓
+
+Amazon S3
+
+Best for:
+
+- Limited local storage
+- Disaster recovery
+- Hybrid workloads
+
+---
+
+### Stored Volumes
+
+Primary data stored locally.
+
+Copies are asynchronously backed up to AWS as EBS snapshots.
+
+Flow:
+
+Server
+
+↓
+
+Local Storage
+
+↓
+
+EBS Snapshots
+
+Best for:
+
+- Low-latency local access
+- Backup to AWS
+
+---
+
+## 3. Tape Gateway
+
+Virtual tape library (VTL).
+
+Replaces physical backup tapes.
+
+Flow:
+
+Backup Software
+
+↓
+
+Tape Gateway
+
+↓
+
+Virtual Tape
+
+↓
+
+AWS
+
+Best for:
+
+- Existing tape backup applications
+- Long-term archival
+- Compliance
+
+---
+
+# How Storage Gateway Works
+
+Application
+
+↓
+
+Storage Gateway
+
+↓
+
+Local Cache
+
+↓
+
+AWS Storage
+
+↓
+
+Transparent Access
+
+---
+
+# Real-Life Example
+
+Company has:
+
+50 TB File Server
+
+↓
+
+Needs cloud backup
+
+↓
+
+Install File Gateway
+
+↓
+
+Files automatically stored in Amazon S3
+
+↓
+
+Employees continue using the same shared folders
+
+---
+
+# Storage Gateway vs AWS DataSync
+
+| Storage Gateway | AWS DataSync |
+|-----------------|--------------|
+| Continuous hybrid storage | One-time or scheduled data transfer |
+| Ongoing integration | Data migration and synchronization |
+| Local cache | No local cache |
+
+---
+
+# Storage Gateway vs Snow Family
+
+| Storage Gateway | Snow Family |
+|-----------------|-------------|
+| Uses network | Offline data transfer |
+| Continuous access | Bulk migration |
+| Hybrid storage | Physical devices |
+
+---
+
+# Storage Gateway vs Amazon EFS
+
+| Storage Gateway | Amazon EFS |
+|-----------------|------------|
+| Hybrid storage | Cloud-native file storage |
+| Connects on-premises to AWS | Shared file system for AWS resources |
+
+---
+
+# Benefits
+
+- Hybrid cloud
+- Local caching
+- Disaster recovery
+- Secure data transfer
+- Cost optimization
+- Easy integration
+- Minimal application changes
+
+---
+
+# AWS Services Used
+
+- Amazon S3
+- Amazon EBS Snapshots
+- AWS Backup
+- IAM
+- CloudWatch
+
+---
+
+# Common Use Cases
+
+- Backup to AWS
+- Disaster recovery
+- File sharing
+- Archive storage
+- Hybrid cloud
+- Tape replacement
+
+---
+
+# Exam Tips
+
+Choose AWS Storage Gateway when the question mentions:
+
+- Hybrid cloud
+- On-premises + AWS
+- Extend local storage
+- Backup to AWS
+- NFS
+- SMB
+- iSCSI
+- Virtual tape library (VTL)
+- Continuous synchronization
+
+Choose File Gateway when:
+
+- Shared files
+- NFS or SMB
+- Amazon S3 storage
+
+Choose Volume Gateway when:
+
+- Block storage
+- iSCSI
+- EBS snapshots
+
+Choose Tape Gateway when:
+
+- Tape backups
+- Virtual Tape Library (VTL)
+- Legacy backup software
+
+---
+
+# Summary
+
+AWS Storage Gateway is a hybrid cloud storage service that connects on-premises environments with AWS storage. It offers File Gateway for file storage, Volume Gateway for block storage, and Tape Gateway for virtual tape backups.
