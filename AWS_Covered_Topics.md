@@ -48,7 +48,7 @@
 ## 🟣 Tier 5 — Security Services
 
 * [ ] AWS Organizations
-* [ ] AWS Identity Center
+* [x] AWS Identity Center
 * [x] Amazon GuardDuty
 * [x] Amazon Inspector
 * [ ] Amazon Macie
