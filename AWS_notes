@@ -3564,3 +3564,371 @@ Choose Tape Gateway when:
 # Summary
 
 AWS Storage Gateway is a hybrid cloud storage service that connects on-premises environments with AWS storage. It offers File Gateway for file storage, Volume Gateway for block storage, and Tape Gateway for virtual tape backups.
+
+
+# Day 29 – AWS Identity Center
+
+## Overview
+
+AWS Identity Center (formerly AWS Single Sign-On) is a service that enables users to securely sign in once and access multiple AWS accounts and business applications from a single place.
+
+It provides centralized identity and access management across AWS Organizations and supported applications.
+
+---
+
+# Why Use AWS Identity Center?
+
+- Single Sign-On (SSO)
+- Centralized user management
+- Access multiple AWS accounts
+- Access business applications
+- Supports external identity providers
+- Simplifies permission management
+
+---
+
+# What is Single Sign-On (SSO)?
+
+Without SSO
+
+AWS Account A
+
+↓
+
+Login
+
+AWS Account B
+
+↓
+
+Login Again
+
+AWS Account C
+
+↓
+
+Login Again
+
+Many usernames and passwords.
+
+---
+
+With AWS Identity Center
+
+One Login
+
+↓
+
+AWS Identity Center
+
+↓
+
+AWS Account A
+
+AWS Account B
+
+AWS Account C
+
+Salesforce
+
+Microsoft 365
+
+No repeated logins.
+
+---
+
+# How AWS Identity Center Works
+
+User
+
+↓
+
+AWS Identity Center
+
+↓
+
+Permission Set
+
+↓
+
+AWS Account
+
+↓
+
+Role Created Automatically
+
+↓
+
+Access Resources
+
+---
+
+# Key Components
+
+## 1. Users
+
+People who access AWS resources.
+
+Example:
+
+- Developer
+- Administrator
+- Manager
+
+---
+
+## 2. Groups
+
+Collection of users.
+
+Example:
+
+Developers
+
+↓
+
+John
+
+Alice
+
+David
+
+---
+
+## 3. Permission Sets
+
+A permission set defines what users can do.
+
+Examples:
+
+Administrator
+
+↓
+
+Full Access
+
+Developer
+
+↓
+
+EC2 + S3
+
+ReadOnly
+
+↓
+
+View Only
+
+Permission Sets are mapped to IAM Roles in each AWS account.
+
+---
+
+## 4. AWS Accounts
+
+Users can access multiple AWS accounts after signing in once.
+
+Example
+
+AWS Organization
+
+↓
+
+Development
+
+↓
+
+Testing
+
+↓
+
+Production
+
+---
+
+# Identity Sources
+
+AWS Identity Center supports:
+
+- Built-in Identity Store
+- Microsoft Active Directory
+- External Identity Providers
+
+Examples:
+
+- Microsoft Entra ID (Azure AD)
+- Okta
+- Ping Identity
+
+---
+
+# AWS Organizations Integration
+
+AWS Organizations
+
+↓
+
+AWS Identity Center
+
+↓
+
+All AWS Accounts
+
+↓
+
+Centralized Login
+
+---
+
+# Permission Flow
+
+User
+
+↓
+
+Login Once
+
+↓
+
+Identity Center
+
+↓
+
+Permission Set
+
+↓
+
+IAM Role
+
+↓
+
+Access EC2
+
+Access S3
+
+Access Lambda
+
+---
+
+# Real-Life Example
+
+Company has:
+
+50 AWS Accounts
+
+Without Identity Center
+
+↓
+
+Employees remember 50 logins.
+
+With Identity Center
+
+↓
+
+One Login
+
+↓
+
+Choose Account
+
+↓
+
+Access Granted
+
+---
+
+# AWS Identity Center vs IAM
+
+| AWS Identity Center | IAM |
+|----------------------|-----|
+| Multiple AWS accounts | Single AWS account |
+| Single Sign-On | User management |
+| Central login | Users, Groups, Roles |
+| Permission Sets | IAM Policies |
+
+---
+
+# AWS Identity Center vs AWS Organizations
+
+| AWS Identity Center | AWS Organizations |
+|----------------------|------------------|
+| Manages user access | Manages AWS accounts |
+| SSO | Consolidated Billing |
+| Permission Sets | SCPs |
+| User Authentication | Account Governance |
+
+---
+
+# Identity Center vs IAM Identity Provider
+
+Identity Center
+
+↓
+
+AWS Managed SSO
+
+External IdP
+
+↓
+
+Okta
+
+Microsoft Entra ID
+
+Google Workspace
+
+↓
+
+Connected to Identity Center
+
+---
+
+# Benefits
+
+- Single Sign-On
+- Centralized permissions
+- Improved security
+- Easy onboarding
+- Reduced password fatigue
+- Multi-account access
+
+---
+
+# Common Use Cases
+
+- Enterprises
+- Multiple AWS accounts
+- Developers
+- Centralized authentication
+- Hybrid identity
+- Corporate login
+
+---
+
+# AWS Services Integrated
+
+- AWS Organizations
+- IAM
+- CloudTrail
+- Amazon QuickSight
+- AWS Management Console
+
+---
+
+# Exam Tips
+
+Choose AWS Identity Center when the question mentions:
+
+- Single Sign-On (SSO)
+- One login
+- Multiple AWS accounts
+- Permission Sets
+- Centralized authentication
+- External Identity Provider
+- AWS Organizations integration
+
+---
+
+# Summary
+
+AWS Identity Center is a Single Sign-On (SSO) service that provides centralized access management across multiple AWS accounts and business applications. Users authenticate once and access authorized AWS accounts through Permission Sets mapped to IAM Roles.
