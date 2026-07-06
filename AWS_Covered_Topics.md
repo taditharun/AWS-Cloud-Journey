@@ -26,7 +26,7 @@
 * [x] AWS ACM
 * [ ] Amazon ECS
 * [x] AWS Organizations
-* [ ] AWS Identity Center
+* [x] AWS Identity Center
 
 ## 🟡 Tier 3 — Good to Know
 
@@ -110,4 +110,4 @@
 * [ ] Amazon OpenSearch Service
 * [ ] Amazon Neptune
 * [ ] Amazon DocumentDB
-* [ ] AWS Backup
+* [x] AWS Backup
