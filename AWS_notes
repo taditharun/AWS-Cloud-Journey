@@ -3932,3 +3932,362 @@ Choose AWS Identity Center when the question mentions:
 # Summary
 
 AWS Identity Center is a Single Sign-On (SSO) service that provides centralized access management across multiple AWS accounts and business applications. Users authenticate once and access authorized AWS accounts through Permission Sets mapped to IAM Roles.
+
+
+# Day 30 – AWS Backup
+
+## Overview
+
+AWS Backup is a fully managed service that centrally automates and manages backups across multiple AWS services using backup policies.
+
+Instead of creating backups separately for each AWS service, AWS Backup lets you manage everything from one place.
+
+---
+
+# Why Use AWS Backup?
+
+- Centralized backup management
+- Automatic backups
+- Scheduled backups
+- Cross-Region backups
+- Cross-Account backups
+- Lifecycle management
+- Compliance support
+
+---
+
+# Supported AWS Services
+
+AWS Backup supports:
+
+- Amazon EC2 (EBS Volumes)
+- Amazon EFS
+- Amazon FSx
+- Amazon RDS
+- Amazon DynamoDB
+- Amazon Aurora
+- AWS Storage Gateway
+- Amazon S3
+- VMware workloads (supported integrations)
+
+---
+
+# How AWS Backup Works
+
+AWS Resources
+
+↓
+
+Backup Plan
+
+↓
+
+Backup Vault
+
+↓
+
+Recovery Point
+
+↓
+
+Restore
+
+---
+
+# Core Components
+
+## 1. Backup Plan
+
+Defines:
+
+- Backup schedule
+- Retention period
+- Lifecycle rules
+
+Example
+
+Every Day
+
+↓
+
+2:00 AM
+
+↓
+
+Keep for 30 Days
+
+---
+
+## 2. Backup Vault
+
+Secure location where backups are stored.
+
+Example
+
+EC2 Backup
+
+↓
+
+Backup Vault
+
+↓
+
+Encrypted
+
+---
+
+## 3. Recovery Point
+
+Each successful backup creates a recovery point.
+
+Example
+
+Monday Backup
+
+↓
+
+Recovery Point
+
+Tuesday Backup
+
+↓
+
+Recovery Point
+
+---
+
+## 4. Restore
+
+Restore resources from any recovery point.
+
+Example
+
+Delete Database
+
+↓
+
+Restore
+
+↓
+
+Yesterday's Backup
+
+---
+
+# Backup Process
+
+Amazon RDS
+
+↓
+
+AWS Backup
+
+↓
+
+Backup Vault
+
+↓
+
+Recovery Point
+
+↓
+
+Restore Database
+
+---
+
+# Backup Lifecycle
+
+Backup Created
+
+↓
+
+30 Days
+
+↓
+
+Move to Cold Storage
+
+↓
+
+365 Days
+
+↓
+
+Delete Automatically
+
+---
+
+# Backup Policies
+
+Can define:
+
+- Daily backup
+- Weekly backup
+- Monthly backup
+- Yearly backup
+
+Example
+
+Production Database
+
+↓
+
+Daily Backup
+
+↓
+
+Retain 90 Days
+
+---
+
+# Cross-Region Backup
+
+Region A
+
+↓
+
+AWS Backup
+
+↓
+
+Region B
+
+Used for:
+
+- Disaster Recovery
+- Business Continuity
+
+---
+
+# Cross-Account Backup
+
+Production Account
+
+↓
+
+AWS Backup
+
+↓
+
+Security Account
+
+Useful for protection against accidental deletion or ransomware.
+
+---
+
+# Encryption
+
+AWS Backup supports encryption using:
+
+AWS KMS
+
+↓
+
+Encrypted Backup Vault
+
+---
+
+# Real-Life Example
+
+Company has:
+
+- 20 EC2 Instances
+- 10 RDS Databases
+- 5 EFS File Systems
+
+Instead of configuring backups separately,
+
+↓
+
+One AWS Backup Plan
+
+↓
+
+Automatically backs up everything
+
+---
+
+# AWS Backup vs EBS Snapshots
+
+| AWS Backup | EBS Snapshot |
+|------------|--------------|
+| Centralized management | Backup only EBS volumes |
+| Multiple AWS services | Only Amazon EBS |
+| Backup policies | Manual or scheduled snapshots |
+| Lifecycle management | Individual snapshots |
+
+---
+
+# AWS Backup vs AWS Elastic Disaster Recovery
+
+| AWS Backup | Elastic Disaster Recovery |
+|------------|---------------------------|
+| Backup & restore | Continuous replication |
+| Restore from backup | Fast failover |
+| Data protection | Disaster recovery |
+
+---
+
+# Benefits
+
+- Fully managed
+- Automated backups
+- Centralized management
+- Compliance
+- Cross-account backup
+- Cross-region backup
+- Encryption
+- Lifecycle management
+
+---
+
+# Common Use Cases
+
+- Disaster Recovery
+- Compliance
+- Business Continuity
+- Centralized Backup
+- Long-term retention
+- Data protection
+
+---
+
+# AWS Services Used
+
+- AWS KMS
+- Amazon EventBridge
+- Amazon CloudWatch
+- IAM
+- Backup Vault
+
+---
+
+# Exam Tips
+
+Choose AWS Backup when the question mentions:
+
+- Centralized backup
+- Automatic backups
+- Backup policies
+- Multiple AWS services
+- Cross-region backup
+- Cross-account backup
+- Recovery Point
+- Backup Vault
+
+Choose EBS Snapshot when:
+
+- Backup only an EBS volume
+
+Choose AWS Elastic Disaster Recovery when:
+
+- Continuous replication
+- Fast disaster recovery
+- Minimal downtime
+
+---
+
+# Summary
+
+AWS Backup is a fully managed service that centralizes and automates backups across supported AWS services. It uses Backup Plans, Backup Vaults, and Recovery Points to simplify backup management, improve compliance, and support disaster recovery.
