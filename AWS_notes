@@ -4291,3 +4291,266 @@ Choose AWS Elastic Disaster Recovery when:
 # Summary
 
 AWS Backup is a fully managed service that centralizes and automates backups across supported AWS services. It uses Backup Plans, Backup Vaults, and Recovery Points to simplify backup management, improve compliance, and support disaster recovery.
+
+
+# Day 30 – Amazon Macie
+
+## Overview
+
+Amazon Macie is a fully managed data security and privacy service that uses machine learning and pattern matching to discover, classify, and protect sensitive data stored in Amazon S3.
+
+It helps organizations identify Personally Identifiable Information (PII), financial data, and other confidential information stored in S3 buckets.
+
+---
+
+# Why Use Amazon Macie?
+
+- Discover sensitive data
+- Protect Personally Identifiable Information (PII)
+- Scan Amazon S3 buckets
+- Improve data security
+- Support compliance (GDPR, HIPAA, PCI DSS)
+- Detect publicly accessible sensitive data
+
+---
+
+# What Does Macie Find?
+
+Macie can identify:
+
+- Credit Card Numbers
+- Aadhaar Numbers
+- Passport Numbers
+- PAN Numbers
+- Email Addresses
+- Phone Numbers
+- Medical Records
+- Bank Account Numbers
+- Customer Personal Data
+
+---
+
+# How Amazon Macie Works
+
+Amazon S3
+
+↓
+
+Amazon Macie
+
+↓
+
+Machine Learning + Pattern Matching
+
+↓
+
+Sensitive Data Found
+
+↓
+
+Security Findings
+
+↓
+
+Security Team
+
+---
+
+# Example
+
+S3 Bucket
+
+↓
+
+employees.csv
+
+Contains:
+
+- Employee Name
+- Aadhaar Number
+- Salary
+- Phone Number
+
+↓
+
+Macie detects:
+
+Sensitive Data
+
+↓
+
+High Severity Finding
+
+---
+
+# What Can Macie Detect?
+
+## 1. Personally Identifiable Information (PII)
+
+Examples:
+
+- Name
+- Address
+- Phone Number
+- Email Address
+- Aadhaar Number
+- Passport Number
+
+---
+
+## 2. Financial Information
+
+Examples:
+
+- Credit Card Numbers
+- Bank Account Numbers
+- Debit Card Numbers
+
+---
+
+## 3. Healthcare Information
+
+Examples:
+
+- Medical Records
+- Patient IDs
+- Health Reports
+
+---
+
+## 4. Publicly Accessible Sensitive Data
+
+Example
+
+Public S3 Bucket
+
+↓
+
+Contains Customer Data
+
+↓
+
+Macie Alerts You
+
+---
+
+# Real-Life Example
+
+Company stores:
+
+customer_data.csv
+
+↓
+
+Amazon S3
+
+↓
+
+Amazon Macie scans
+
+↓
+
+Finds:
+
+10,000 Credit Card Numbers
+
+↓
+
+Security Finding Generated
+
+---
+
+# Machine Learning
+
+Macie uses:
+
+- Machine Learning
+- Pattern Matching
+
+To automatically identify sensitive information.
+
+No manual searching required.
+
+---
+
+# Amazon Macie vs Amazon GuardDuty
+
+| Amazon Macie | Amazon GuardDuty |
+|--------------|------------------|
+| Finds sensitive data | Detects threats |
+| Scans Amazon S3 | Monitors AWS environment |
+| Detects PII | Detects malware, attacks |
+| Data Security | Threat Detection |
+
+---
+
+# Amazon Macie vs Amazon Inspector
+
+| Amazon Macie | Amazon Inspector |
+|--------------|------------------|
+| Sensitive data discovery | Vulnerability scanning |
+| Amazon S3 | EC2, ECR, Lambda |
+| PII | CVEs & Missing Patches |
+
+---
+
+# Amazon Macie vs AWS Config
+
+| Amazon Macie | AWS Config |
+|--------------|-----------|
+| Sensitive data | Configuration compliance |
+| S3 Data | AWS Resource Configuration |
+
+---
+
+# Common Use Cases
+
+- GDPR compliance
+- HIPAA compliance
+- PCI DSS compliance
+- Data privacy
+- Security audits
+- S3 data classification
+
+---
+
+# AWS Services Integrated
+
+- Amazon S3
+- AWS Security Hub
+- Amazon EventBridge
+- AWS Organizations
+- IAM
+
+---
+
+# Benefits
+
+- Automatic discovery
+- Machine Learning
+- Data classification
+- Compliance
+- Risk detection
+- Easy reporting
+
+---
+
+# Exam Tips
+
+Choose Amazon Macie when the question mentions:
+
+- Sensitive data
+- Personally Identifiable Information (PII)
+- Credit Card Numbers
+- Amazon S3
+- Data classification
+- Privacy
+- GDPR
+- HIPAA
+- PCI DSS
+
+---
+
+# Summary
+
+Amazon Macie is a fully managed data security service that automatically discovers, classifies, and protects sensitive information stored in Amazon S3 using machine learning and pattern matching.
