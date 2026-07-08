@@ -4554,3 +4554,241 @@ Choose Amazon Macie when the question mentions:
 # Summary
 
 Amazon Macie is a fully managed data security service that automatically discovers, classifies, and protects sensitive information stored in Amazon S3 using machine learning and pattern matching.
+
+
+
+# Day 31 – IAM Access Analyzer
+
+## Overview
+
+IAM Access Analyzer is a security service that analyzes IAM and resource-based policies to identify AWS resources that are accessible from outside your AWS account or AWS Organization.
+
+It helps detect unintended public and cross-account access.
+
+---
+
+# Why Use IAM Access Analyzer?
+
+- Detect public access
+- Detect cross-account access
+- Improve security
+- Enforce least privilege
+- Validate IAM policies
+- Find unused permissions
+
+---
+
+# How IAM Access Analyzer Works
+
+AWS Resources
+
+↓
+
+Analyze Policies
+
+↓
+
+IAM Access Analyzer
+
+↓
+
+Findings
+
+↓
+
+Fix Security Issues
+
+---
+
+# What Resources Can It Analyze?
+
+- Amazon S3 Buckets
+- IAM Roles
+- AWS KMS Keys
+- Amazon SQS Queues
+- Amazon SNS Topics
+- AWS Lambda Resource Policies
+- AWS Secrets Manager Secrets
+
+---
+
+# Types of Access Detected
+
+## 1. Public Access
+
+Example
+
+S3 Bucket
+
+↓
+
+Public Read
+
+↓
+
+Finding:
+
+Bucket is publicly accessible.
+
+---
+
+## 2. Cross-Account Access
+
+Example
+
+AWS Account A
+
+↓
+
+IAM Role
+
+↓
+
+Allows Account B
+
+↓
+
+Finding:
+
+External Account Access
+
+---
+
+## 3. Organization Access
+
+Checks whether resources are shared outside your AWS Organization.
+
+---
+
+## 4. Policy Validation
+
+Analyzes IAM policies and recommends more secure permissions.
+
+Example
+
+Policy
+
+↓
+
+Allow *
+
+↓
+
+Recommendation:
+
+Grant only required permissions.
+
+---
+
+## 5. Unused Access (Policy Generation)
+
+Analyzes CloudTrail activity to help generate least-privilege IAM policies based on actual usage.
+
+---
+
+# Example
+
+Developer accidentally creates:
+
+Public S3 Bucket
+
+↓
+
+IAM Access Analyzer
+
+↓
+
+Security Finding
+
+↓
+
+Administrator Removes Public Access
+
+---
+
+# Benefits
+
+- Continuous analysis
+- Detects unintended sharing
+- Improves security posture
+- Supports least privilege
+- Easy policy validation
+- No infrastructure to manage
+
+---
+
+# Real-Life Example
+
+Company stores customer data in Amazon S3.
+
+An employee accidentally changes the bucket policy to allow public access.
+
+↓
+
+IAM Access Analyzer detects:
+
+Public Access Found
+
+↓
+
+Administrator fixes the bucket policy before data is exposed.
+
+---
+
+# IAM Access Analyzer vs IAM
+
+| IAM | IAM Access Analyzer |
+|-----|----------------------|
+| Creates users, groups, roles | Analyzes permissions |
+| Grants access | Detects risky access |
+| Manages policies | Validates policies |
+
+---
+
+# IAM Access Analyzer vs AWS Config
+
+| IAM Access Analyzer | AWS Config |
+|---------------------|------------|
+| Detects public/cross-account access | Tracks resource configuration changes |
+| Analyzes resource policies | Evaluates compliance rules |
+
+---
+
+# IAM Access Analyzer vs Amazon Inspector
+
+| IAM Access Analyzer | Amazon Inspector |
+|---------------------|------------------|
+| Access analysis | Vulnerability scanning |
+| Resource policies | Software vulnerabilities |
+| Public access | Missing patches & CVEs |
+
+---
+
+# Common Use Cases
+
+- Find public S3 buckets
+- Detect external resource sharing
+- Review IAM permissions
+- Security audits
+- Compliance
+- Least privilege implementation
+
+---
+
+# Exam Tips
+
+Choose IAM Access Analyzer when the question mentions:
+
+- Public S3 bucket
+- External access
+- Cross-account access
+- Resource policy analysis
+- IAM policy validation
+- Least privilege
+- Who can access my resource?
+
+---
+
+# Summary
+
+IAM Access Analyzer continuously analyzes IAM and resource-based policies to identify AWS resources that are publicly accessible or shared with external AWS accounts or organizations, helping improve security by detecting unintended access.
