@@ -56,7 +56,7 @@
 * [x] AWS Shield
 * [ ] AWS Shield Advanced
 * [ ] AWS Firewall Manager
-* [ ] IAM Access Analyzer
+* [x] IAM Access Analyzer
 
 ## 🔵 Tier 6 — Cost Management
 
