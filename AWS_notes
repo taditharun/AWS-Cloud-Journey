@@ -4792,3 +4792,320 @@ Choose IAM Access Analyzer when the question mentions:
 # Summary
 
 IAM Access Analyzer continuously analyzes IAM and resource-based policies to identify AWS resources that are publicly accessible or shared with external AWS accounts or organizations, helping improve security by detecting unintended access.
+
+
+# Day 32 – AWS Billing Dashboard
+
+## Overview
+
+The AWS Billing Dashboard is the central place to view and manage your AWS billing information, costs, payments, invoices, credits, and Free Tier usage.
+
+It provides a complete overview of your AWS account's financial activity.
+
+---
+
+# Why Use AWS Billing Dashboard?
+
+- View current AWS bill
+- Track monthly spending
+- Monitor Free Tier usage
+- View payment history
+- Download invoices
+- Check AWS credits
+- Access cost management tools
+
+---
+
+# How AWS Billing Dashboard Works
+
+AWS Services
+
+↓
+
+Usage Data
+
+↓
+
+Billing Dashboard
+
+↓
+
+Current Charges
+
+↓
+
+Reports & Cost Tools
+
+---
+
+# Information Available
+
+## 1. Current Month Charges
+
+Shows:
+
+- Total bill
+- Cost by AWS service
+- Estimated charges
+
+Example
+
+EC2
+
+↓
+
+$25
+
+S3
+
+↓
+
+$5
+
+Lambda
+
+↓
+
+$2
+
+Total
+
+↓
+
+$32
+
+---
+
+## 2. Payment History
+
+Displays:
+
+- Previous payments
+- Payment dates
+- Payment methods
+- Payment status
+
+Example
+
+June Bill
+
+↓
+
+Paid
+
+July Bill
+
+↓
+
+Pending
+
+---
+
+## 3. Bills & Invoices
+
+Download:
+
+- Monthly invoices
+- Tax invoices
+- Billing statements
+
+Useful for:
+
+- Company accounting
+- Expense tracking
+
+---
+
+## 4. AWS Credits
+
+Shows:
+
+- Promotional credits
+- AWS Educate credits
+- Remaining balance
+- Expiration date
+
+Example
+
+Credits
+
+↓
+
+$100 Remaining
+
+↓
+
+Expires Dec 2026
+
+---
+
+## 5. Free Tier
+
+Monitor:
+
+- Free Tier usage
+- Remaining limits
+- Services nearing limits
+
+Example
+
+EC2
+
+↓
+
+750 Hours Used
+
+↓
+
+Warning if nearing limit
+
+---
+
+## 6. Cost Breakdown
+
+View spending by:
+
+- AWS Service
+- AWS Region
+- Linked Account
+- Tags
+
+Example
+
+EC2
+
+↓
+
+70%
+
+S3
+
+↓
+
+20%
+
+Lambda
+
+↓
+
+10%
+
+---
+
+## 7. Cost Management Tools
+
+From the Billing Dashboard you can access:
+
+- AWS Cost Explorer
+- AWS Budgets
+- AWS Pricing Calculator
+- Cost & Usage Report (CUR)
+- Billing Preferences
+
+---
+
+# Billing Dashboard Sections
+
+- Home
+- Bills
+- Payments
+- Credits
+- Cost Explorer
+- Budgets
+- Free Tier
+- Cost & Usage Reports
+
+---
+
+# Real-Life Example
+
+A student uses AWS Free Tier.
+
+They want to know:
+
+- How much have I spent?
+- Do I still have Free Tier usage?
+- Are my AWS Educate credits available?
+
+↓
+
+Open
+
+AWS Billing Dashboard
+
+↓
+
+View all billing information.
+
+---
+
+# Benefits
+
+- One place for billing
+- Easy cost tracking
+- Payment management
+- Invoice downloads
+- Free Tier monitoring
+- Credit management
+
+---
+
+# Billing Dashboard vs Cost Explorer
+
+| Billing Dashboard | AWS Cost Explorer |
+|-------------------|------------------|
+| View bills | Analyze spending trends |
+| Payments | Cost forecasting |
+| Invoices | Interactive reports |
+| Credits | Cost filtering |
+
+---
+
+# Billing Dashboard vs AWS Budgets
+
+| Billing Dashboard | AWS Budgets |
+|-------------------|------------|
+| Shows current bill | Sends spending alerts |
+| Payment information | Budget thresholds |
+| Invoice management | Forecast alerts |
+
+---
+
+# Billing Dashboard vs Pricing Calculator
+
+| Billing Dashboard | Pricing Calculator |
+|-------------------|-------------------|
+| Actual AWS costs | Estimated future costs |
+| Current billing | Pre-deployment planning |
+
+---
+
+# Common Use Cases
+
+- Check AWS bill
+- Download invoices
+- View payment history
+- Track AWS credits
+- Monitor Free Tier
+- Access cost tools
+
+---
+
+# Exam Tips
+
+Choose AWS Billing Dashboard when the question mentions:
+
+- View AWS bill
+- Payment history
+- Invoice
+- Tax invoice
+- AWS credits
+- Free Tier usage
+- Current monthly charges
+- Billing summary
+
+---
+
+# Summary
+
+The AWS Billing Dashboard is the central console for viewing AWS bills, payments, invoices, Free Tier usage, credits, and accessing AWS cost management services such as Cost Explorer and AWS Budgets.
