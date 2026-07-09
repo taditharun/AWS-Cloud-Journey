@@ -62,7 +62,7 @@
 
 * [x] AWS Cost Explorer
 * [x] AWS Budgets
-* [ ] AWS Billing Dashboard
+* [x] AWS Billing Dashboard
 * [ ] AWS Trusted Advisor
 * [ ] AWS Health Dashboard
 
