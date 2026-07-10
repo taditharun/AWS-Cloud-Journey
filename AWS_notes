@@ -5109,3 +5109,340 @@ Choose AWS Billing Dashboard when the question mentions:
 # Summary
 
 The AWS Billing Dashboard is the central console for viewing AWS bills, payments, invoices, Free Tier usage, credits, and accessing AWS cost management services such as Cost Explorer and AWS Budgets.
+
+# Day 33 – AWS Trusted Advisor
+
+## Overview
+
+AWS Trusted Advisor is an AWS service that analyzes your AWS environment and provides recommendations to help improve:
+
+- Cost Optimization
+- Performance
+- Security
+- Fault Tolerance
+- Service Limits (Quotas)
+- Operational Excellence
+
+Think of it as an **AWS health check and best-practices advisor** for your AWS account.
+
+---
+
+# Why Use AWS Trusted Advisor?
+
+- Reduce AWS costs
+- Improve security
+- Increase application reliability
+- Optimize performance
+- Monitor service quotas
+- Follow AWS best practices
+
+---
+
+# How AWS Trusted Advisor Works
+
+AWS Resources
+
+↓
+
+AWS Trusted Advisor
+
+↓
+
+Analyzes Resources
+
+↓
+
+Recommendations
+
+↓
+
+Improve AWS Environment
+
+---
+
+# Six Check Categories
+
+## 1. Cost Optimization 💰
+
+Helps reduce unnecessary AWS costs.
+
+Examples:
+
+- Idle EC2 instances
+- Underutilized EC2 instances
+- Unused Elastic IP addresses
+- Idle Load Balancers
+- Low-utilization Amazon RDS
+
+Example
+
+EC2 Running
+
+CPU = 2%
+
+↓
+
+Recommendation
+
+Stop or Resize Instance
+
+↓
+
+Save Money
+
+---
+
+## 2. Security 🔒
+
+Checks security best practices.
+
+Examples:
+
+- S3 bucket permissions
+- MFA on root account
+- Security Groups open to the internet
+- IAM best practices
+
+Example
+
+Security Group
+
+↓
+
+Port 22 Open to 0.0.0.0/0
+
+↓
+
+Warning
+
+Restrict SSH Access
+
+---
+
+## 3. Fault Tolerance 🛡️
+
+Improves application availability.
+
+Examples:
+
+- Auto Scaling enabled
+- Multi-AZ RDS
+- Load Balancer health
+- Backup recommendations
+
+Example
+
+Single EC2 Instance
+
+↓
+
+Recommendation
+
+Use Auto Scaling + Load Balancer
+
+---
+
+## 4. Performance ⚡
+
+Suggests ways to improve application performance.
+
+Examples:
+
+- High CPU utilization
+- Provisioned throughput
+- Resource optimization
+
+Example
+
+EC2 CPU = 95%
+
+↓
+
+Recommendation
+
+Use Larger Instance
+
+---
+
+## 5. Service Quotas 📊
+
+Monitors AWS service limits.
+
+Examples:
+
+- EC2 instance limits
+- VPC limits
+- Elastic IP limits
+- IAM role limits
+
+Example
+
+EC2 Limit
+
+↓
+
+20 Instances
+
+Current Usage
+
+↓
+
+19 Instances
+
+↓
+
+Warning
+
+Request Limit Increase
+
+---
+
+## 6. Operational Excellence ⚙️
+
+Provides recommendations to improve operational efficiency.
+
+Examples:
+
+- Monitoring
+- Logging
+- Backup practices
+- Resource management
+
+---
+
+# Trusted Advisor Dashboard
+
+AWS Account
+
+↓
+
+Trusted Advisor
+
+↓
+
+Cost
+
+↓
+
+Security
+
+↓
+
+Performance
+
+↓
+
+Fault Tolerance
+
+↓
+
+Service Quotas
+
+↓
+
+Operational Excellence
+
+---
+
+# Real-Life Example
+
+A company has:
+
+- 10 EC2 instances
+- 2 idle Elastic IPs
+- Public S3 bucket
+- No Multi-AZ RDS
+
+Trusted Advisor reports:
+
+✓ Stop idle EC2
+
+✓ Release unused Elastic IP
+
+✓ Secure S3 bucket
+
+✓ Enable Multi-AZ
+
+---
+
+# AWS Support Plans
+
+Trusted Advisor checks depend on your AWS Support plan.
+
+| Support Plan | Access |
+|--------------|--------|
+| Basic | Limited checks (core security and service quotas) |
+| Developer | Limited checks |
+| Business | Full checks |
+| Enterprise On-Ramp | Full checks |
+| Enterprise | Full checks |
+
+---
+
+# AWS Trusted Advisor vs AWS Config
+
+| Trusted Advisor | AWS Config |
+|-----------------|------------|
+| Best practice recommendations | Configuration tracking |
+| Cost optimization | Compliance monitoring |
+| Performance recommendations | Resource configuration history |
+
+---
+
+# Trusted Advisor vs Cost Explorer
+
+| Trusted Advisor | Cost Explorer |
+|-----------------|--------------|
+| Gives cost-saving recommendations | Shows spending analysis |
+| Identifies idle resources | Shows historical costs |
+
+---
+
+# Trusted Advisor vs AWS Health Dashboard
+
+| Trusted Advisor | AWS Health Dashboard |
+|-----------------|----------------------|
+| Recommendations | AWS service and account health events |
+| Best practices | Service outages and scheduled maintenance |
+
+---
+
+# Benefits
+
+- Save money
+- Improve security
+- Increase reliability
+- Optimize performance
+- Prevent quota issues
+- Follow AWS best practices
+
+---
+
+# Common Use Cases
+
+- Cost reduction
+- Security audits
+- Performance tuning
+- Compliance
+- Infrastructure optimization
+- Capacity planning
+
+---
+
+# Exam Tips
+
+Choose AWS Trusted Advisor when the question mentions:
+
+- Best practice recommendations
+- Cost optimization
+- Idle resources
+- Security recommendations
+- Service quota monitoring
+- Performance improvement
+- Fault tolerance improvements
+
+---
+
+# Summary
+
+AWS Trusted Advisor analyzes your AWS environment and provides recommendations across six categories: Cost Optimization, Security, Fault Tolerance, Performance, Service Quotas, and Operational Excellence to help you follow AWS best practices.
