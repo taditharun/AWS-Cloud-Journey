@@ -63,7 +63,7 @@
 * [x] AWS Cost Explorer
 * [x] AWS Budgets
 * [x] AWS Billing Dashboard
-* [ ] AWS Trusted Advisor
+* [x] AWS Trusted Advisor
 * [ ] AWS Health Dashboard
 
 ## 🟡 Tier 7 — Migration Services
