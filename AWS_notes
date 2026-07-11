@@ -5446,3 +5446,399 @@ Choose AWS Trusted Advisor when the question mentions:
 # Summary
 
 AWS Trusted Advisor analyzes your AWS environment and provides recommendations across six categories: Cost Optimization, Security, Fault Tolerance, Performance, Service Quotas, and Operational Excellence to help you follow AWS best practices.
+
+
+# Day 32 – Amazon Bedrock
+
+## Overview
+
+Amazon Bedrock is a fully managed Generative AI service that provides access to foundation models (FMs) from Amazon and leading AI companies through a single API, without managing servers or infrastructure.
+
+---
+
+# Why Use Amazon Bedrock?
+
+- Build Generative AI applications
+- Access multiple Foundation Models
+- No infrastructure management
+- No GPU management
+- Serverless AI
+- Pay only for what you use
+- Secure AWS integration
+
+---
+
+# How Amazon Bedrock Works
+
+Application
+
+↓
+
+Amazon Bedrock
+
+↓
+
+Choose Foundation Model
+
+↓
+
+Send Prompt
+
+↓
+
+AI Response
+
+---
+
+# Foundation Models Available
+
+## 1. Amazon Nova
+
+AWS's own family of Foundation Models.
+
+Best For:
+
+- Chatbots
+- Text generation
+- Summarization
+- Code generation
+- AI Agents
+
+Example
+
+User
+
+↓
+
+"Summarize this document"
+
+↓
+
+Amazon Nova
+
+↓
+
+Summary
+
+---
+
+## 2. Anthropic Claude
+
+Best for:
+
+- Long documents
+- Reasoning
+- Coding
+- Question Answering
+
+Example
+
+300-page PDF
+
+↓
+
+Claude
+
+↓
+
+Summary + Answers
+
+---
+
+## 3. Meta Llama
+
+Best for:
+
+- General AI
+- Chatbots
+- Coding
+- Research
+
+Example
+
+"Explain Python"
+
+↓
+
+Llama
+
+↓
+
+Detailed Explanation
+
+---
+
+## 4. AI21 Labs
+
+Best for:
+
+- Content writing
+- Grammar correction
+- Email writing
+- Summarization
+
+Example
+
+Write Professional Email
+
+↓
+
+AI21
+
+↓
+
+Generated Email
+
+---
+
+## 5. Cohere
+
+Best for:
+
+- Embeddings
+- Semantic Search
+- Retrieval-Augmented Generation (RAG)
+- Text Classification
+
+Example
+
+Company Documents
+
+↓
+
+Cohere
+
+↓
+
+Find Relevant Information
+
+---
+
+## 6. Mistral AI
+
+Best for:
+
+- Fast inference
+- Translation
+- Coding
+- Efficient chatbots
+
+Example
+
+English
+
+↓
+
+Mistral
+
+↓
+
+French Translation
+
+---
+
+## 7. Stability AI
+
+Best for:
+
+- AI Image Generation
+- Logos
+- Posters
+- Artwork
+- Marketing Images
+
+Example
+
+"A lion wearing sunglasses"
+
+↓
+
+Stability AI
+
+↓
+
+Generated Image
+
+---
+
+# Common Use Cases
+
+- AI Chatbots
+- Content Generation
+- Image Generation
+- Document Summarization
+- Code Generation
+- Question Answering
+- AI Assistants
+- Search Applications (RAG)
+
+---
+
+# Amazon Bedrock vs Amazon SageMaker
+
+| Amazon Bedrock | Amazon SageMaker |
+|---------------|------------------|
+| Use Foundation Models | Build & Train ML Models |
+| No model training required | Train custom models |
+| Generative AI | Traditional ML + GenAI |
+| Prompt-based | Full ML lifecycle |
+
+---
+
+# Benefits
+
+- Fully managed
+- Multiple AI model providers
+- Serverless
+- No infrastructure management
+- Secure AWS integration
+- Scalable
+- Easy API access
+
+---
+
+# Model Comparison
+
+| Model | Best For |
+|---------|----------|
+| Amazon Nova | General AI, Chatbots, Code |
+| Anthropic Claude | Long Documents, Reasoning |
+| Meta Llama | General Purpose AI |
+| AI21 Labs | Writing & Grammar |
+| Cohere | Search, Embeddings, RAG |
+| Mistral AI | Fast Text Generation |
+| Stability AI | Image Generation |
+
+---
+
+# Visual Architecture
+
+Application
+
+↓
+
+Amazon Bedrock
+
+↓
+
+Choose Model
+
+├── Amazon Nova
+
+├── Anthropic Claude
+
+├── Meta Llama
+
+├── AI21 Labs
+
+├── Cohere
+
+├── Mistral AI
+
+└── Stability AI
+
+↓
+
+AI Response
+
+---
+
+# Exam Tips
+
+Choose Amazon Bedrock when the question mentions:
+
+- Foundation Models (FM)
+- Generative AI
+- Large Language Models (LLMs)
+- Chatbots
+- Text Generation
+- Image Generation
+- Prompt Engineering
+- No infrastructure management
+- Multiple AI model providers
+
+---
+
+# Summary
+
+Amazon Bedrock is a fully managed AWS service that provides access to foundation models from Amazon and leading AI companies through a single API, enabling developers to build Generative AI applications without managing infrastructure or training models.
+
+---
+
+# Memory Trick
+
+Need Generative AI?
+
+↓
+
+Amazon Bedrock
+
+Need to Train Your Own ML Model?
+
+↓
+
+Amazon SageMaker
+
+---
+
+# Foundation Model Memory
+
+Amazon Nova
+
+↓
+
+AWS AI
+
+Claude
+
+↓
+
+Long Documents
+
+Llama
+
+↓
+
+General AI
+
+AI21
+
+↓
+
+Writing
+
+Cohere
+
+↓
+
+Search + RAG
+
+Mistral
+
+↓
+
+Fast AI
+
+Stability AI
+
+↓
+
+Images
+
+---
+
+# Common Cloud Practitioner / AI Practitioner Questions
+
+| Question | Answer |
+|----------|--------|
+| Build a chatbot using an existing FM | Amazon Bedrock |
+| Generate images using AI | Amazon Bedrock (Stability AI) |
+| Summarize long documents | Amazon Bedrock (Claude) |
+| Create AI-powered search (RAG) | Amazon Bedrock (Cohere) |
+| Train your own ML model | Amazon SageMaker |
+
+---
+
+# Interview One-Liner
+
+> Amazon Bedrock is a fully managed Generative AI service that provides API access to foundation models from Amazon and leading AI providers, allowing developers to build AI applications without managing infrastructure or training models.
