@@ -94,7 +94,7 @@
 ## 🤖 Tier 10 — AI/ML
 
 * [x] Amazon Bedrock
-* [ ] Amazon SageMaker
+* [x] Amazon SageMaker
 * [ ] Amazon Textract
 * [ ] Amazon Rekognition
 * [ ] Amazon Comprehend
