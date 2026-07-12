@@ -5842,3 +5842,452 @@ Images
 # Interview One-Liner
 
 > Amazon Bedrock is a fully managed Generative AI service that provides API access to foundation models from Amazon and leading AI providers, allowing developers to build AI applications without managing infrastructure or training models.
+
+
+# Day 33 – Amazon SageMaker
+
+## Overview
+
+Amazon SageMaker is a fully managed Machine Learning (ML) service that enables developers and data scientists to build, train, deploy, and monitor machine learning models at scale.
+
+It simplifies the entire machine learning lifecycle.
+
+---
+
+# Why Use Amazon SageMaker?
+
+- Build ML models
+- Train ML models
+- Deploy ML models
+- Monitor model performance
+- Scale automatically
+- No infrastructure management
+
+---
+
+# Machine Learning Lifecycle
+
+Collect Data
+
+↓
+
+Prepare Data
+
+↓
+
+Build Model
+
+↓
+
+Train Model
+
+↓
+
+Evaluate Model
+
+↓
+
+Deploy Model
+
+↓
+
+Predict (Inference)
+
+↓
+
+Monitor Model
+
+Amazon SageMaker helps with every step.
+
+---
+
+# How SageMaker Works
+
+Data
+
+↓
+
+Amazon SageMaker
+
+↓
+
+Train Model
+
+↓
+
+Deploy Endpoint
+
+↓
+
+Application
+
+↓
+
+Predictions
+
+---
+
+# Core Features
+
+## 1. Data Preparation
+
+Prepare and clean datasets before training.
+
+Examples:
+
+- Remove duplicates
+- Fill missing values
+- Convert formats
+
+---
+
+## 2. Model Building
+
+Create Machine Learning models using:
+
+- Python
+- Jupyter Notebooks
+- Built-in Algorithms
+- Custom Algorithms
+
+---
+
+## 3. Model Training
+
+Train models using AWS-managed compute.
+
+Example
+
+Sales Data
+
+↓
+
+Train Model
+
+↓
+
+Predict Future Sales
+
+---
+
+## 4. Model Deployment
+
+Deploy the trained model as an endpoint.
+
+Application
+
+↓
+
+SageMaker Endpoint
+
+↓
+
+Prediction
+
+---
+
+## 5. Inference
+
+Make predictions using the deployed model.
+
+Example
+
+Customer Details
+
+↓
+
+ML Model
+
+↓
+
+Approve Loan
+
+---
+
+## 6. Model Monitoring
+
+Continuously monitors:
+
+- Prediction accuracy
+- Data quality
+- Model drift
+
+Alerts when performance degrades.
+
+---
+
+# Types of Machine Learning
+
+Amazon SageMaker supports:
+
+- Supervised Learning
+- Unsupervised Learning
+- Reinforcement Learning
+
+---
+
+# Common Algorithms
+
+Examples:
+
+- Linear Regression
+- XGBoost
+- Random Forest
+- K-Means
+- Neural Networks
+
+---
+
+# SageMaker Components
+
+- Studio
+- Notebook Instances
+- Training Jobs
+- Endpoints
+- Model Registry
+- Pipelines
+- Feature Store
+- Ground Truth
+
+---
+
+# Real-Life Example
+
+Bank wants to predict:
+
+Will customer repay loan?
+
+Customer Data
+
+↓
+
+Amazon SageMaker
+
+↓
+
+Train ML Model
+
+↓
+
+Deploy Endpoint
+
+↓
+
+Application Predicts
+
+Loan Approved or Rejected
+
+---
+
+# SageMaker vs Amazon Bedrock
+
+| Amazon SageMaker | Amazon Bedrock |
+|------------------|----------------|
+| Build & train ML models | Use Foundation Models |
+| Traditional ML + GenAI | Generative AI |
+| Create custom models | Use pre-trained models |
+| Full ML lifecycle | Prompt-based AI |
+
+---
+
+# SageMaker vs Amazon Rekognition
+
+| SageMaker | Rekognition |
+|------------|-------------|
+| Build custom ML models | Ready-made image analysis |
+| Train your own model | No training required |
+
+---
+
+# Benefits
+
+- Fully managed
+- End-to-end ML platform
+- Automatic scaling
+- Integrated notebooks
+- Built-in algorithms
+- Model deployment
+- Monitoring
+
+---
+
+# AWS Services Integrated
+
+- Amazon S3
+- Amazon ECR
+- IAM
+- CloudWatch
+- AWS Lambda
+- EventBridge
+
+---
+
+# Common Use Cases
+
+- Fraud Detection
+- Recommendation Systems
+- Sales Forecasting
+- Image Classification
+- Predictive Analytics
+- Customer Churn Prediction
+- Medical Diagnosis
+- Demand Forecasting
+
+---
+
+# Visual Architecture
+
+Application
+
+↓
+
+Amazon SageMaker Endpoint
+
+↓
+
+Trained Model
+
+↓
+
+Training Job
+
+↓
+
+Training Data (Amazon S3)
+
+---
+
+# SageMaker Workflow
+
+Amazon S3
+
+↓
+
+Prepare Data
+
+↓
+
+Train Model
+
+↓
+
+Evaluate
+
+↓
+
+Deploy Endpoint
+
+↓
+
+Application
+
+↓
+
+Prediction
+
+---
+
+# Exam Tips
+
+Choose Amazon SageMaker when the question mentions:
+
+- Build Machine Learning model
+- Train model
+- Deploy ML model
+- Custom ML
+- Data Scientist
+- Jupyter Notebook
+- Prediction
+- Inference
+- Model Monitoring
+
+Choose Amazon Bedrock when:
+
+- Foundation Models
+- Chatbots
+- Generative AI
+- Prompt Engineering
+- Text Generation
+- Image Generation
+- No model training
+
+---
+
+# Summary
+
+Amazon SageMaker is a fully managed machine learning service that helps developers and data scientists build, train, deploy, and monitor machine learning models throughout the entire ML lifecycle.
+
+---
+
+# Memory Trick
+
+Need to Build & Train AI?
+
+↓
+
+Amazon SageMaker
+
+Need to Use Existing AI?
+
+↓
+
+Amazon Bedrock
+
+---
+
+# SageMaker vs Bedrock
+
+Need Custom ML Model
+
+↓
+
+Amazon SageMaker
+
+Need ChatGPT-like AI
+
+↓
+
+Amazon Bedrock
+
+Need Sales Prediction
+
+↓
+
+Amazon SageMaker
+
+Need AI Chatbot
+
+↓
+
+Amazon Bedrock
+
+Need Fraud Detection
+
+↓
+
+Amazon SageMaker
+
+Need Image Generation
+
+↓
+
+Amazon Bedrock
+
+---
+
+# Common AI Practitioner Questions
+
+| Question | Answer |
+|----------|--------|
+| Build a custom ML model | Amazon SageMaker |
+| Train an ML model | Amazon SageMaker |
+| Deploy an ML model | Amazon SageMaker |
+| Use an existing Foundation Model | Amazon Bedrock |
+| Build a Generative AI chatbot | Amazon Bedrock |
+| Predict future sales using your own data | Amazon SageMaker |
+
+---
+
+# Interview One-Liner
+
+> Amazon SageMaker is a fully managed machine learning service that enables developers and data scientists to build, train, deploy, and monitor custom machine learning models at scale without managing the underlying infrastructure.
