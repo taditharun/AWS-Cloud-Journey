@@ -6291,3 +6291,397 @@ Amazon Bedrock
 # Interview One-Liner
 
 > Amazon SageMaker is a fully managed machine learning service that enables developers and data scientists to build, train, deploy, and monitor custom machine learning models at scale without managing the underlying infrastructure.
+
+# Day 34 – Amazon Textract
+
+## Overview
+
+Amazon Textract is a fully managed AI service that automatically extracts printed text, handwritten text, forms, and tables from scanned documents and images.
+
+Unlike traditional OCR, Textract understands the structure of documents, such as forms and tables.
+
+---
+
+# Why Use Amazon Textract?
+
+- Extract printed text
+- Extract handwritten text
+- Read scanned documents
+- Extract tables
+- Extract forms
+- Automate document processing
+- No machine learning expertise required
+
+---
+
+# How Amazon Textract Works
+
+Document / Image
+
+↓
+
+Amazon Textract
+
+↓
+
+Extract Text
+
+↓
+
+Extract Forms
+
+↓
+
+Extract Tables
+
+↓
+
+Structured Output
+
+---
+
+# What Can Textract Extract?
+
+## 1. Printed Text
+
+Example
+
+Invoice
+
+↓
+
+Amazon Textract
+
+↓
+
+Extracted Text
+
+---
+
+## 2. Handwritten Text
+
+Example
+
+Application Form
+
+↓
+
+Handwritten Name
+
+↓
+
+Amazon Textract
+
+↓
+
+Digital Text
+
+---
+
+## 3. Forms
+
+Textract identifies:
+
+- Field Names (Keys)
+- Field Values
+
+Example
+
+Application Form
+
+Name : Tharun
+
+Age : 22
+
+↓
+
+Amazon Textract
+
+↓
+
+Name = Tharun
+
+Age = 22
+
+---
+
+## 4. Tables
+
+Example
+
+Student Marks
+
+| Name | Marks |
+|------|-------|
+| Ravi | 95 |
+| Ram  | 90 |
+
+↓
+
+Amazon Textract
+
+↓
+
+Structured Table Data
+
+---
+
+# Real-Life Example
+
+Bank receives
+
+10,000 Loan Applications
+
+↓
+
+Amazon Textract
+
+↓
+
+Extract:
+
+- Name
+- Address
+- PAN Number
+- Income
+
+↓
+
+Store in Database
+
+---
+
+# Common Use Cases
+
+- Invoice processing
+- Receipt processing
+- Passport scanning
+- ID card processing
+- Insurance claims
+- Medical records
+- Bank forms
+- HR documents
+- Tax forms
+
+---
+
+# Amazon Textract vs OCR
+
+| Traditional OCR | Amazon Textract |
+|-----------------|-----------------|
+| Extracts text only | Extracts text, forms, and tables |
+| Doesn't understand document structure | Understands document layout |
+| Limited capabilities | AI-powered document understanding |
+
+---
+
+# Amazon Textract vs Amazon Rekognition
+
+| Amazon Textract | Amazon Rekognition |
+|-----------------|--------------------|
+| Reads documents | Analyzes images/videos |
+| Extracts text | Detects faces, objects, labels |
+| Forms & tables | Facial recognition |
+
+---
+
+# Amazon Textract vs Amazon Comprehend
+
+| Amazon Textract | Amazon Comprehend |
+|-----------------|-------------------|
+| Extracts text from documents | Understands meaning of text |
+| OCR + Forms + Tables | NLP (sentiment, entities, language) |
+
+Example
+
+Invoice Image
+
+↓
+
+Textract
+
+↓
+
+Extract Text
+
+↓
+
+Comprehend
+
+↓
+
+Analyze Meaning
+
+---
+
+# Benefits
+
+- Fully managed
+- No OCR software to manage
+- Supports handwriting
+- Supports forms and tables
+- High accuracy
+- Easy API integration
+- Scalable
+
+---
+
+# AWS Services Integrated
+
+- Amazon S3
+- AWS Lambda
+- Amazon Comprehend
+- Amazon Augmented AI (A2I)
+- IAM
+- EventBridge
+
+---
+
+# Visual Architecture
+
+Document
+
+↓
+
+Amazon S3
+
+↓
+
+Amazon Textract
+
+↓
+
+Extracted Data
+
+↓
+
+Application / Database
+
+---
+
+# Workflow
+
+Upload Document
+
+↓
+
+Amazon S3
+
+↓
+
+Amazon Textract
+
+↓
+
+Extract Text
+
+↓
+
+Application
+
+↓
+
+Store Results
+
+---
+
+# Exam Tips
+
+Choose Amazon Textract when the question mentions:
+
+- OCR
+- Extract text
+- Scan documents
+- Read invoices
+- Read receipts
+- Read forms
+- Read tables
+- Handwritten text
+- Document processing
+
+---
+
+# Summary
+
+Amazon Textract is a fully managed AI service that automatically extracts printed text, handwritten text, forms, and tables from scanned documents and images, converting unstructured documents into structured data.
+
+---
+
+# Memory Trick
+
+Need to Read Documents?
+
+↓
+
+Amazon Textract
+
+Need to Understand Text?
+
+↓
+
+Amazon Comprehend
+
+Need to Analyze Images?
+
+↓
+
+Amazon Rekognition
+
+---
+
+# Textract vs Other AI Services
+
+Need Document OCR
+
+↓
+
+Amazon Textract
+
+Need Image Recognition
+
+↓
+
+Amazon Rekognition
+
+Need NLP
+
+↓
+
+Amazon Comprehend
+
+Need Speech to Text
+
+↓
+
+Amazon Transcribe
+
+Need Text to Speech
+
+↓
+
+Amazon Polly
+
+Need Translation
+
+↓
+
+Amazon Translate
+
+---
+
+# Common AI Practitioner Questions
+
+| Question | Answer |
+|----------|--------|
+| Extract text from scanned invoices | Amazon Textract |
+| Read handwritten forms | Amazon Textract |
+| Detect faces in images | Amazon Rekognition |
+| Analyze sentiment of text | Amazon Comprehend |
+| Convert speech to text | Amazon Transcribe |
+| Convert text to speech | Amazon Polly |
+
+---
+
+# Interview One-Liner
+
+> Amazon Textract is a fully managed AI service that automatically extracts printed text, handwritten text, forms, and tables from scanned documents and images, enabling intelligent document processing without manual data entry.
