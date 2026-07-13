@@ -95,7 +95,7 @@
 
 * [x] Amazon Bedrock
 * [x] Amazon SageMaker
-* [ ] Amazon Textract
+* [x] Amazon Textract
 * [ ] Amazon Rekognition
 * [ ] Amazon Comprehend
 * [ ] Amazon Translate
