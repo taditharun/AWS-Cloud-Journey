@@ -6685,3 +6685,318 @@ Amazon Translate
 # Interview One-Liner
 
 > Amazon Textract is a fully managed AI service that automatically extracts printed text, handwritten text, forms, and tables from scanned documents and images, enabling intelligent document processing without manual data entry.
+
+
+# Day 35 – AWS Databases & Search Services
+
+## 1. Amazon ElastiCache
+
+### Overview
+
+Amazon ElastiCache is a fully managed in-memory caching service that improves application performance by storing frequently accessed data in memory instead of repeatedly querying a database.
+
+### Supported Engines
+
+- Redis
+- Memcached
+
+### Use Cases
+
+- Database caching
+- Session storage
+- Gaming leaderboards
+- Real-time analytics
+
+### Architecture
+
+Application
+
+↓
+
+Amazon ElastiCache
+
+↓
+
+Database
+
+### Benefits
+
+- Extremely low latency
+- Reduces database load
+- Improves application performance
+- Fully managed
+- Automatic scaling
+
+### Exam Tips
+
+Choose Amazon ElastiCache when the question mentions:
+
+- Frequently accessed data
+- In-memory cache
+- Low latency
+- Redis
+- Memcached
+- Improve application response time
+
+---
+
+## 2. Amazon FSx
+
+### Overview
+
+Amazon FSx is a fully managed file storage service that provides high-performance file systems for Windows and Linux workloads.
+
+### File System Options
+
+- Amazon FSx for Windows File Server
+- Amazon FSx for Lustre
+- Amazon FSx for NetApp ONTAP
+- Amazon FSx for OpenZFS
+
+### Use Cases
+
+- Windows file sharing
+- High Performance Computing (HPC)
+- Enterprise applications
+- Machine Learning workloads
+
+### Benefits
+
+- Fully managed
+- High performance
+- Shared file storage
+- Highly available
+- Automatic backups
+
+### Exam Tips
+
+Choose Amazon FSx when the question mentions:
+
+- Windows file server
+- Shared file system
+- High-performance file storage
+- Lustre
+- SMB
+- Enterprise file storage
+
+---
+
+## 3. Amazon OpenSearch Service
+
+### Overview
+
+Amazon OpenSearch Service is a fully managed search and analytics service used for searching large datasets and analyzing logs in real time.
+
+### Use Cases
+
+- Application search
+- Log analytics
+- Website search
+- Security analytics
+- Monitoring dashboards
+
+### Architecture
+
+Applications
+
+↓
+
+OpenSearch
+
+↓
+
+Search & Analytics
+
+↓
+
+Dashboard
+
+### Benefits
+
+- Fast full-text search
+- Real-time analytics
+- Log monitoring
+- Dashboard visualization
+- Fully managed
+
+### Exam Tips
+
+Choose Amazon OpenSearch Service when the question mentions:
+
+- Search engine
+- Log analysis
+- Application logs
+- Dashboards
+- Full-text search
+- Real-time analytics
+
+---
+
+## 4. Amazon Neptune
+
+### Overview
+
+Amazon Neptune is a fully managed graph database service designed to store and analyze highly connected data.
+
+### Best For
+
+- Social networks
+- Fraud detection
+- Recommendation engines
+- Knowledge graphs
+- Network analysis
+
+### Example
+
+Alice
+
+↓
+
+Friend
+
+↓
+
+Bob
+
+↓
+
+Friend
+
+↓
+
+Charlie
+
+### Benefits
+
+- Graph database
+- High performance
+- Highly available
+- Automatic backups
+- Fully managed
+
+### Exam Tips
+
+Choose Amazon Neptune when the question mentions:
+
+- Graph database
+- Relationships
+- Social networks
+- Fraud detection
+- Recommendation engine
+- Connected data
+
+---
+
+## 5. Amazon DocumentDB
+
+### Overview
+
+Amazon DocumentDB is a fully managed NoSQL document database compatible with MongoDB applications.
+
+It stores data in JSON-like documents instead of rows and columns.
+
+### Example Document
+
+{
+  "name": "Tharun",
+  "skills": ["AWS","Python"],
+  "experience": 2
+}
+
+### Use Cases
+
+- Content management
+- User profiles
+- Product catalogs
+- Mobile applications
+- Content management systems (CMS)
+
+### Benefits
+
+- MongoDB compatibility
+- Fully managed
+- Automatic backups
+- Highly available
+- Scalable
+
+### Exam Tips
+
+Choose Amazon DocumentDB when the question mentions:
+
+- MongoDB
+- Document database
+- JSON documents
+- NoSQL
+- Flexible schema
+
+---
+
+# Comparison Table
+
+| Service | Purpose | Best For |
+|----------|----------|----------|
+| Amazon ElastiCache | In-memory cache | Faster application performance |
+| Amazon FSx | Managed file system | Windows/Linux shared storage |
+| Amazon OpenSearch Service | Search & analytics | Log analysis & search |
+| Amazon Neptune | Graph database | Relationship data |
+| Amazon DocumentDB | Document database | MongoDB applications |
+
+---
+
+# Memory Trick
+
+Need Faster Database?
+
+↓
+
+Amazon ElastiCache
+
+Need Shared File Storage?
+
+↓
+
+Amazon FSx
+
+Need Search & Log Analytics?
+
+↓
+
+Amazon OpenSearch Service
+
+Need Relationship Database?
+
+↓
+
+Amazon Neptune
+
+Need MongoDB-Compatible Database?
+
+↓
+
+Amazon DocumentDB
+
+---
+
+# Common Cloud Practitioner Questions
+
+| Question | Answer |
+|----------|--------|
+| Speed up database queries | Amazon ElastiCache |
+| Windows file server | Amazon FSx |
+| Search application logs | Amazon OpenSearch Service |
+| Store relationship data | Amazon Neptune |
+| MongoDB-compatible database | Amazon DocumentDB |
+
+---
+
+# Interview One-Liners
+
+**Amazon ElastiCache:** Fully managed in-memory caching service that improves application performance using Redis or Memcached.
+
+**Amazon FSx:** Fully managed file storage service providing high-performance Windows and Linux file systems.
+
+**Amazon OpenSearch Service:** Fully managed search and analytics service for log analysis, monitoring, and full-text search.
+
+**Amazon Neptune:** Fully managed graph database service optimized for highly connected datasets.
+
+**Amazon DocumentDB:** Fully managed NoSQL document database compatible with MongoDB for storing JSON-like documents.
