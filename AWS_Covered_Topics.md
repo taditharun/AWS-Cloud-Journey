@@ -24,7 +24,7 @@
 * [x] AWS KMS
 * [x] AWS Secrets Manager
 * [x] AWS ACM
-* [ ] Amazon ECS
+* [x] Amazon ECS
 * [x] AWS Organizations
 * [x] AWS Identity Center
 
@@ -47,14 +47,14 @@
 
 ## 🟣 Tier 5 — Security Services
 
-* [ ] AWS Organizations
+* [x] AWS Organizations
 * [x] AWS Identity Center
 * [x] Amazon GuardDuty
 * [x] Amazon Inspector
-* [ ] Amazon Macie
+* [x] Amazon Macie
 * [x] AWS WAF
 * [x] AWS Shield
-* [ ] AWS Shield Advanced
+* [x] AWS Shield Advanced
 * [ ] AWS Firewall Manager
 * [x] IAM Access Analyzer
 
@@ -64,7 +64,7 @@
 * [x] AWS Budgets
 * [x] AWS Billing Dashboard
 * [x] AWS Trusted Advisor
-* [ ] AWS Health Dashboard
+* [x] AWS Health Dashboard
 
 ## 🟡 Tier 7 — Migration Services
 
@@ -97,11 +97,11 @@
 * [x] Amazon SageMaker
 * [x] Amazon Textract
 * [ ] Amazon Rekognition
-* [ ] Amazon Comprehend
-* [ ] Amazon Translate
-* [ ] Amazon Transcribe
-* [ ] Amazon Polly
-* [ ] Amazon Lex
+* [x] Amazon Comprehend
+* [x] Amazon Translate
+* [x] Amazon Transcribe
+* [x] Amazon Polly
+* [x] Amazon Lex
 
 ## 🟤 Tier 11 — Advanced Services
 
