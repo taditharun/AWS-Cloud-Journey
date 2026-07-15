@@ -55,7 +55,7 @@
 * [x] AWS WAF
 * [x] AWS Shield
 * [x] AWS Shield Advanced
-* [ ] AWS Firewall Manager
+* [x] AWS Firewall Manager
 * [x] IAM Access Analyzer
 
 ## 🔵 Tier 6 — Cost Management
@@ -69,11 +69,11 @@
 ## 🟡 Tier 7 — Migration Services
 
 * [x] AWS Storage Gateway
-* [ ] AWS Database Migration Service (DMS)
-* [ ] AWS Schema Conversion Tool (SCT)
-* [ ] AWS DataSync
-* [ ] AWS Transfer Family
-* [ ] AWS Snow Family
+* [x] AWS Database Migration Service (DMS)
+* [x] AWS Schema Conversion Tool (SCT)
+* [x] AWS DataSync
+* [x] AWS Transfer Family
+* [x] AWS Snow Family
 
 ## 🟠 Tier 8 — Containers & DevOps
 
@@ -87,7 +87,7 @@
 
 * [ ] Amazon Athena
 * [ ] AWS Glue
-* [ ] Amazon Redshift
+* [x] Amazon Redshift
 * [ ] Amazon QuickSight
 * [ ] Amazon Kinesis
 
@@ -96,7 +96,7 @@
 * [x] Amazon Bedrock
 * [x] Amazon SageMaker
 * [x] Amazon Textract
-* [ ] Amazon Rekognition
+* [x] Amazon Rekognition
 * [x] Amazon Comprehend
 * [x] Amazon Translate
 * [x] Amazon Transcribe
@@ -105,9 +105,9 @@
 
 ## 🟤 Tier 11 — Advanced Services
 
-* [ ] Amazon ElastiCache
-* [ ] Amazon FSx
-* [ ] Amazon OpenSearch Service
-* [ ] Amazon Neptune
-* [ ] Amazon DocumentDB
+* [x] Amazon ElastiCache
+* [x] Amazon FSx
+* [x] Amazon OpenSearch Service
+* [x] Amazon Neptune
+* [x] Amazon DocumentDB
 * [x] AWS Backup
