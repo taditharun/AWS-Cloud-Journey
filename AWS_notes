@@ -49,8 +49,7 @@ Documenting my AWS cloud learning journey through hands-on labs and notes.
 * What is VPC
 * CIDR Blocks
 * Public and Private Subnets
-* Route Tables
-* Internet Gateway
+* Route Tables* Internet Gateway
 * Security Groups
 
 #### Hands-On
@@ -7000,3 +6999,275 @@ Amazon DocumentDB
 **Amazon Neptune:** Fully managed graph database service optimized for highly connected datasets.
 
 **Amazon DocumentDB:** Fully managed NoSQL document database compatible with MongoDB for storing JSON-like documents.
+
+
+
+
+# Day 37 – AWS Migration & Analytics
+
+---
+
+# 1. AWS Snow Family
+
+## Overview
+
+AWS Snow Family is a collection of physical devices used to transfer and process large amounts of data when internet connectivity is slow, unavailable, or impractical.
+
+---
+
+## Snow Family Services
+
+- **Snowcone** – Small device for remote locations and edge computing.
+- **Snowball Edge** – Medium-sized device for large-scale data migration and edge computing.
+- **Snowmobile** – Shipping container for exabyte-scale data migration.
+
+---
+
+## Use Cases
+
+- Large-scale data migration
+- Disaster recovery
+- Remote locations
+- Edge computing
+- Hybrid cloud
+
+---
+
+## Snow Family vs DataSync
+
+| AWS Snow Family | AWS DataSync |
+|-----------------|--------------|
+| Physical device | Online data transfer |
+| Offline migration | Online synchronization |
+| Large datasets (TB/PB) | Regular file transfers |
+
+---
+
+## Exam Tips
+
+Choose **AWS Snow Family** when the question mentions:
+
+- Physical device
+- Petabytes of data
+- Slow or no internet
+- Offline data migration
+- Edge computing
+
+---
+
+# 2. AWS Shield & AWS Shield Advanced
+
+## AWS Shield
+
+A free managed service that automatically protects AWS resources from common **DDoS (Distributed Denial of Service)** attacks.
+
+## AWS Shield Advanced
+
+A paid service that provides:
+
+- Advanced DDoS protection
+- 24/7 AWS DDoS Response Team (DRT)
+- Cost protection
+- Detailed attack visibility
+
+---
+
+## Shield vs Shield Advanced
+
+| AWS Shield | AWS Shield Advanced |
+|-------------|---------------------|
+| Free | Paid |
+| Basic DDoS protection | Advanced DDoS protection |
+| Automatic | Includes AWS DRT support |
+
+---
+
+## Exam Tips
+
+- **Basic DDoS protection → AWS Shield**
+- **Enterprise DDoS protection → AWS Shield Advanced**
+
+---
+
+# 3. AWS Firewall Manager
+
+## Overview
+
+AWS Firewall Manager centrally manages security policies across multiple AWS accounts in an AWS Organization.
+
+It manages:
+
+- AWS WAF
+- AWS Shield Advanced
+- Security Groups
+- AWS Network Firewall
+
+---
+
+## Use Cases
+
+- Apply one WAF policy to multiple accounts
+- Centralized firewall management
+- Organization-wide security
+
+---
+
+## Exam Tips
+
+Choose **AWS Firewall Manager** when the question mentions:
+
+- Multiple AWS accounts
+- AWS Organizations
+- Centralized firewall management
+
+---
+
+# 4. AWS WAF (Web Application Firewall)
+
+## Overview
+
+AWS WAF protects web applications by filtering and blocking malicious HTTP/HTTPS requests.
+
+---
+
+## Protects Against
+
+- SQL Injection (SQLi)
+- Cross-Site Scripting (XSS)
+- Bot traffic
+- IP blocking
+- Geo blocking
+- Rate limiting
+
+---
+
+## Works With
+
+- Amazon CloudFront
+- Application Load Balancer (ALB)
+- Amazon API Gateway
+- AWS AppSync
+
+---
+
+## WAF vs Shield
+
+| AWS WAF | AWS Shield |
+|----------|------------|
+| Web attacks | DDoS attacks |
+| SQL Injection | Network attacks |
+| XSS | Volumetric attacks |
+
+---
+
+## Exam Tips
+
+Choose **AWS WAF** when the question mentions:
+
+- SQL Injection
+- XSS
+- HTTP/HTTPS filtering
+- Web application security
+
+---
+
+# 5. Amazon Redshift
+
+## Overview
+
+Amazon Redshift is a fully managed **data warehouse** service used to analyze massive amounts of historical data using SQL.
+
+It is built for **Business Intelligence (BI)** and analytics.
+
+---
+
+## Common Use Cases
+
+- Sales reports
+- Customer analytics
+- Financial reporting
+- Business Intelligence
+- Historical data analysis
+
+---
+
+## Redshift vs RDS
+
+| Amazon Redshift | Amazon RDS |
+|-----------------|------------|
+| Data Warehouse | Relational Database |
+| Analytics (OLAP) | Transactions (OLTP) |
+| Historical data | Daily application data |
+
+---
+
+## Benefits
+
+- Petabyte-scale analytics
+- Fast SQL queries
+- Fully managed
+- Highly scalable
+
+---
+
+## Exam Tips
+
+Choose **Amazon Redshift** when the question mentions:
+
+- Data Warehouse
+- Business Intelligence (BI)
+- Analytics
+- Historical data
+- SQL reporting
+
+---
+
+# Quick Revision
+
+| Service | Remember |
+|----------|----------|
+| AWS Snow Family | Physical devices for large offline data migration |
+| AWS Shield | Free DDoS protection |
+| AWS Shield Advanced | Premium DDoS protection + AWS DRT |
+| AWS Firewall Manager | Centralized security management |
+| AWS WAF | Protects web applications from SQLi & XSS |
+| Amazon Redshift | Data Warehouse for analytics & BI |
+
+---
+
+# Memory Trick
+
+Need Offline Data Migration?
+↓
+AWS Snow Family
+
+Need DDoS Protection?
+↓
+AWS Shield
+
+Need Advanced DDoS Protection?
+↓
+AWS Shield Advanced
+
+Need Central Security for Many Accounts?
+↓
+AWS Firewall Manager
+
+Need Web Application Protection?
+↓
+AWS WAF
+
+Need Business Reports & Analytics?
+↓
+Amazon Redshift
+
+---
+
+# Interview One-Liners
+
+- **AWS Snow Family:** Physical devices used for secure, large-scale offline data migration and edge computing.
+- **AWS Shield:** Free AWS service that protects applications from common DDoS attacks.
+- **AWS Shield Advanced:** Paid service offering enhanced DDoS protection, expert support, and cost protection.
+- **AWS Firewall Manager:** Centralized service for managing WAF, Shield Advanced, and firewall policies across AWS Organizations.
+- **AWS WAF:** Managed web application firewall that blocks malicious web requests such as SQL injection and XSS.
+- **Amazon Redshift:** Fully managed petabyte-scale data warehouse service for business intelligence and analytics.
