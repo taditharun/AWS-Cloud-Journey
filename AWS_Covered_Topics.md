@@ -78,18 +78,18 @@
 ## 🟠 Tier 8 — Containers & DevOps
 
 * [x] Amazon ECS
-* [ ] AWS CloudFormation
-* [ ] AWS Elastic Beanstalk
-* [ ] AWS Step Functions
-* [ ] AWS App Runner
+* [x] AWS CloudFormation
+* [x] AWS Elastic Beanstalk
+* [x] AWS Step Functions
+* [x] AWS App Runner
 
 ## ⚪ Tier 9 — Analytics
 
-* [ ] Amazon Athena
-* [ ] AWS Glue
+* [x] Amazon Athena
+* [x] AWS Glue
 * [x] Amazon Redshift
-* [ ] Amazon QuickSight
-* [ ] Amazon Kinesis
+* [x] Amazon QuickSight
+* [x] Amazon Kinesis
 
 ## 🤖 Tier 10 — AI/ML
 
